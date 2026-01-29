@@ -47,7 +47,7 @@ export function Hero() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="mt-10 flex flex-col sm:flex-row gap-4"
                     >
-                        <Link href="/videos">
+                        <Link href="/sessions">
                             <Button size="lg" className="gap-2 w-full sm:w-auto">
                                 <PlayCircle size={20} />
                                 Explore Sessions

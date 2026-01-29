@@ -15,6 +15,15 @@ const nextConfig = {
             }
         ],
     },
+    async redirects() {
+        return [
+            {
+                source: "/videos",
+                destination: "/sessions",
+                permanent: true,
+            },
+        ];
+    },
 };
 
 export default nextConfig;
