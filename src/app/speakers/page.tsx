@@ -78,7 +78,7 @@ export default function SpeakersPage() {
                     Our Speakers
                 </h1>
                 <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-                    World-class experts driving the future of AI.
+                    People who have shared their time, knowledge, and experience with the TFUG Islamabad community.
                 </p>
             </div>
 

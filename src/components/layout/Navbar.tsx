@@ -107,7 +107,7 @@ export function Navbar() {
                                 <Link
                                     href="/contact"
                                     onClick={() => setIsOpen(false)}
-                                    className="block w-full text-center px-6 py-4 text-lg font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700 shadow-sm active:scale-[0.98] transition-all"
+                                    className="block w-full text-center px-6 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 shadow-sm active:scale-[0.98] transition-all"
                                 >
                                     Join Us
                                 </Link>
