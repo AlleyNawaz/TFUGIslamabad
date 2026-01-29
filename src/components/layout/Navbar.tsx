@@ -91,19 +91,19 @@ export function Navbar() {
                         exit={{ opacity: 0, height: 0 }}
                         className="md:hidden overflow-hidden bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800"
                     >
-                        <div className="px-6 py-8 space-y-2">
+                        <div className="px-6 py-8 flex flex-col space-y-6">
                             {navItems.map((item) => (
                                 <Link
                                     key={item.href}
                                     href={item.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="block w-full text-lg font-semibold text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 py-3 border-b border-slate-50 dark:border-slate-800/50 last:border-0"
+                                    className="block w-full text-lg font-medium text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                                 >
                                     {item.label}
                                 </Link>
                             ))}
 
-                            <div className="pt-8 mt-2">
+                            <div className="pt-4">
                                 <Link
                                     href="/contact"
                                     onClick={() => setIsOpen(false)}
