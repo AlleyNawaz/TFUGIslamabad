@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Calendar, User, Eye, Clock } from "lucide-react";
+import { Calendar, User, Eye, Clock } from "lucide-react";
 import { Blog } from "@/types";
 
 interface BlogCardProps {

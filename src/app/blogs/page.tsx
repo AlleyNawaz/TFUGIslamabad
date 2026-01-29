@@ -81,7 +81,7 @@ export default function BlogsPage() {
                             No articles found
                         </h3>
                         <p className="text-slate-500 dark:text-slate-400">
-                            We couldn't find any articles matching your criteria.
+                            We couldn&apos;t find any articles matching your criteria.
                         </p>
                         <button
                             onClick={() => { setSearchQuery(""); setActiveCategory("All") }}
