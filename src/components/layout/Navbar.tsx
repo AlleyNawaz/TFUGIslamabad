@@ -91,24 +91,23 @@ export function Navbar() {
                         exit={{ opacity: 0, height: 0 }}
                         className="md:hidden overflow-hidden bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800"
                     >
-                        <div className="px-6 py-6 space-y-2">
+                        <div className="px-6 py-8 space-y-2">
                             {navItems.map((item) => (
                                 <Link
                                     key={item.href}
                                     href={item.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="block w-full py-3 text-lg font-semibold text-slate-900 dark:text-slate-100 active:text-blue-600 dark:active:text-blue-400"
+                                    className="block w-full text-lg font-semibold text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 py-3 border-b border-slate-50 dark:border-slate-800/50 last:border-0"
                                 >
                                     {item.label}
                                 </Link>
                             ))}
 
-                            {/* Visual Grouping Spacer */}
-                            <div className="pt-4 mt-2">
+                            <div className="pt-8 mt-2">
                                 <Link
                                     href="/contact"
                                     onClick={() => setIsOpen(false)}
-                                    className="block w-full text-center px-6 py-3 text-lg font-bold text-white bg-blue-600 rounded-full active:bg-blue-700"
+                                    className="block w-full text-center px-6 py-4 text-lg font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700 shadow-sm active:scale-[0.98] transition-all"
                                 >
                                     Join Us
                                 </Link>
