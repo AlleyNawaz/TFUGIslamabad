@@ -149,14 +149,6 @@ export const gdes: Speaker[] = [
 
 export const googleSpeakers: Speaker[] = [
     {
-        id: "ritwik-raha",
-        name: "Ritwik Raha",
-        role: "Machine Learning, CEML",
-        company: "Google",
-        image: ritwikImg.src,
-        socials: { linkedin: "https://www.linkedin.com/in/ritwik-raha/" }
-    },
-    {
         id: "abdur-rahman",
         name: "Abdur Rahman",
         role: "Senior Product Lead",
@@ -164,41 +156,17 @@ export const googleSpeakers: Speaker[] = [
         image: abdurImg.src,
         socials: { linkedin: "https://www.linkedin.com/in/abdur-byc/" }
     },
+    {
+        id: "ritwik-raha",
+        name: "Ritwik Raha",
+        role: "Machine Learning, CEML",
+        company: "Google",
+        image: ritwikImg.src,
+        socials: { linkedin: "https://www.linkedin.com/in/ritwik-raha/" }
+    },
 ];
 
 export const industryExperts: Speaker[] = [
-    {
-        id: "syeda-aiman",
-        name: "Syeda Aiman Mumtaz",
-        role: "Women in Tech Lead",
-        company: "Google Developer Groups on Campus CUI",
-        image: syedaImg.src,
-        socials: { linkedin: "https://www.linkedin.com/in/syeda-aiman-mumtaz-sherazi-b32a0b280/" }
-    },
-    {
-        id: "ehtisham-raza",
-        name: "Ehtisham Raza",
-        role: "AI Engineer",
-        company: "Data Techcon",
-        image: ehtishamImg.src,
-        socials: { linkedin: "https://www.linkedin.com/in/ehtisham-raza-0a5479163/" }
-    },
-    {
-        id: "anmol-zehrah",
-        name: "Anmol Zehrah",
-        role: "AI Engineer",
-        company: "Atomic Computing",
-        image: anmolImg.src,
-        socials: { linkedin: "https://www.linkedin.com/in/anmolzehrah/" }
-    },
-    {
-        id: "mujeeb-ur-rehman",
-        name: "Mujeeb Ur Rehman",
-        role: "Senior AI Engineer",
-        company: "Taleemabad",
-        image: mujeebImg.src,
-        socials: { linkedin: "https://www.linkedin.com/in/mujeeb-merwat/" }
-    },
     {
         id: "abdul-raheem",
         name: "Abdul Raheem",
@@ -206,6 +174,14 @@ export const industryExperts: Speaker[] = [
         company: "Betterdata",
         image: abdulImg.src,
         socials: { linkedin: "https://www.linkedin.com/in/xfarooqi/" }
+    },
+    {
+        id: "ahmad-anis",
+        name: "Ahmad Anis",
+        role: "Deep Learning Engineer",
+        company: "Roll.ai",
+        image: ahmadAnisImg.src,
+        socials: { linkedin: "https://www.linkedin.com/in/ahmad-anis/" }
     },
     {
         id: "ahmed-iqbal",
@@ -224,6 +200,22 @@ export const industryExperts: Speaker[] = [
         socials: { linkedin: "https://www.linkedin.com/in/goto-resumemuhammad-ammar-jamshed-029280145/" }
     },
     {
+        id: "anmol-zehrah",
+        name: "Anmol Zehrah",
+        role: "AI Engineer",
+        company: "Atomic Computing",
+        image: anmolImg.src,
+        socials: { linkedin: "https://www.linkedin.com/in/anmolzehrah/" }
+    },
+    {
+        id: "ehtisham-raza",
+        name: "Ehtisham Raza",
+        role: "AI Engineer",
+        company: "Data Techcon",
+        image: ehtishamImg.src,
+        socials: { linkedin: "https://www.linkedin.com/in/ehtisham-raza-0a5479163/" }
+    },
+    {
         id: "hashim-nadeem",
         name: "Hashim Nadeem",
         role: "Machine Learning Engineer",
@@ -240,20 +232,28 @@ export const industryExperts: Speaker[] = [
         socials: { linkedin: "https://www.linkedin.com/in/huzaifakhan04/" }
     },
     {
-        id: "ahmad-anis",
-        name: "Ahmad Anis",
-        role: "Deep Learning Engineer",
-        company: "Roll.ai",
-        image: ahmadAnisImg.src,
-        socials: { linkedin: "https://www.linkedin.com/in/ahmad-anis/" }
-    },
-    {
         id: "maaz-ali",
         name: "Maaz Ali Nadeem",
         role: "Co-Founder & CEO",
         company: "VECTOR Inc.",
         image: maazImg.src,
         socials: { linkedin: "https://www.linkedin.com/in/maazalinadeem/" }
+    },
+    {
+        id: "mughees-awan",
+        name: "Mughees Awan",
+        role: "Data Scientist",
+        company: "Securiti",
+        image: mugheesImg.src,
+        socials: { linkedin: "https://www.linkedin.com/in/mughees-awan/" }
+    },
+    {
+        id: "mujeeb-ur-rehman",
+        name: "Mujeeb Ur Rehman",
+        role: "Senior AI Engineer",
+        company: "Taleemabad",
+        image: mujeebImg.src,
+        socials: { linkedin: "https://www.linkedin.com/in/mujeeb-merwat/" }
     },
     {
         id: "sami-ullah",
@@ -264,12 +264,12 @@ export const industryExperts: Speaker[] = [
         socials: { linkedin: "https://www.linkedin.com/in/sami-ullah-shah-396614187/" }
     },
     {
-        id: "mughees-awan",
-        name: "Mughees Awan",
-        role: "Data Scientist",
-        company: "Securiti",
-        image: mugheesImg.src,
-        socials: { linkedin: "https://www.linkedin.com/in/mughees-awan/" }
+        id: "syeda-aiman",
+        name: "Syeda Aiman Mumtaz",
+        role: "Women in Tech Lead",
+        company: "Google Developer Groups on Campus CUI",
+        image: syedaImg.src,
+        socials: { linkedin: "https://www.linkedin.com/in/syeda-aiman-mumtaz-sherazi-b32a0b280/" }
     },
 ];
 
