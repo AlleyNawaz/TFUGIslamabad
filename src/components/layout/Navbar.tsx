@@ -91,24 +91,28 @@ export function Navbar() {
                         exit={{ opacity: 0, height: 0 }}
                         className="md:hidden overflow-hidden bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800"
                     >
-                        <div className="px-4 py-4 space-y-4">
+                        <div className="px-6 py-6 space-y-2">
                             {navItems.map((item) => (
                                 <Link
                                     key={item.href}
                                     href={item.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="block text-base font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
+                                    className="block w-full py-3 text-lg font-semibold text-slate-900 dark:text-slate-100 active:text-blue-600 dark:active:text-blue-400"
                                 >
                                     {item.label}
                                 </Link>
                             ))}
-                            <Link
-                                href="/contact"
-                                onClick={() => setIsOpen(false)}
-                                className="block w-full text-center px-4 py-2 text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
-                            >
-                                Join Us
-                            </Link>
+
+                            {/* Visual Grouping Spacer */}
+                            <div className="pt-4 mt-2">
+                                <Link
+                                    href="/contact"
+                                    onClick={() => setIsOpen(false)}
+                                    className="block w-full text-center px-6 py-3 text-lg font-bold text-white bg-blue-600 rounded-full active:bg-blue-700"
+                                >
+                                    Join Us
+                                </Link>
+                            </div>
                         </div>
                     </motion.div>
                 )}
