@@ -328,6 +328,32 @@ export const sessions: VideoSession[] = [
         views: 800,
         tags: ["CLIP", "Computer Vision", "Multimodal"]
     },
+    {
+        id: "v-pr-8",
+        title: "Distributional AGI Safety | AI Paper Reading Clubs Day 5 ft. Anmol Zehrah",
+        description: "Exploring distributional concepts in Artificial General Intelligence safety.",
+        youtubeId: "0OyuZZVY5zM",
+        youtubeUrl: "https://youtu.be/0OyuZZVY5zM",
+        speakerId: "anmol-zehrah",
+        programId: "paper-reading",
+        date: "2024-06-16",
+        duration: "1:06:22",
+        views: 36,
+        tags: ["AGI", "Safety", "AI"]
+    },
+    {
+        id: "v-pr-9",
+        title: "Explainable Generative AI (GenXAI): A Survey, Conceptualization, and Research Agenda | AI Paper Reading Clubs Day 6 ft. Urooj Fatima",
+        description: "A comprehensive survey and conceptualization of Explainable Generative AI (GenXAI).",
+        youtubeId: "lal40ZGtV8Y",
+        youtubeUrl: "https://youtu.be/lal40ZGtV8Y",
+        speakerId: "urooj-fatima",
+        programId: "paper-reading",
+        date: "2024-06-30",
+        duration: "22:08",
+        views: 32,
+        tags: ["GenAI", "GenXAI", "Explainable AI"]
+    },
     // New AI/ML Math Clubs Sessions
     {
         id: "v-math-1",
@@ -459,6 +485,84 @@ export const sessions: VideoSession[] = [
         duration: "30:01",
         views: 600,
         tags: ["Google AI Studio", "Production", "Prompts"]
+    },
+    {
+        id: "v-bwa-8",
+        title: "Build your AI Agent with Gemini 3 and ADK",
+        description: "Learn how to build your own AI Agent using Gemini 3 and the Agent Development Kit.",
+        youtubeId: "hIZsbN5LIRw",
+        youtubeUrl: "https://youtu.be/hIZsbN5LIRw",
+        speakerId: "s-bwa-8",
+        programId: "build-with-ai",
+        date: "2024-07-17",
+        duration: "2:57:25",
+        views: 177,
+        tags: ["Gemini 3", "ADK", "Agents"]
+    },
+    {
+        id: "v-bwa-9",
+        title: "Supercharging Gemini CLI with Agent Skills",
+        description: "Enhance your Gemini CLI by integrating powerful agent skills.",
+        youtubeId: "-PQO8rWg6f8",
+        youtubeUrl: "https://youtu.be/-PQO8rWg6f8",
+        speakerId: "s-bwa-9",
+        programId: "build-with-ai",
+        date: "2024-07-31",
+        duration: "1:01:00",
+        views: 75,
+        tags: ["Gemini", "CLI", "Skills"]
+    },
+    {
+        id: "v-bwa-10",
+        title: "Using Android Studio and VSCode to Code with Offline AI Models",
+        description: "Learn how to integrate and code with offline AI models in Android Studio and VSCode.",
+        youtubeId: "BhuqXrP9ST0",
+        youtubeUrl: "https://youtu.be/BhuqXrP9ST0",
+        speakerId: "s-bwa-10",
+        programId: "build-with-ai",
+        date: "2024-08-14",
+        duration: "47:44",
+        views: 58,
+        tags: ["Android Studio", "VSCode", "Offline AI"]
+    },
+    {
+        id: "v-bwa-11",
+        title: "From Prompt to Working Application with Google AI Studio",
+        description: "A comprehensive guide on transitioning from a simple prompt to a fully working application.",
+        youtubeId: "q55DdaPvyNA",
+        youtubeUrl: "https://youtu.be/q55DdaPvyNA",
+        speakerId: "s-bwa-11",
+        programId: "build-with-ai",
+        date: "2024-08-28",
+        duration: "51:43",
+        views: 61,
+        tags: ["Google AI Studio", "Prompting"]
+    },
+    {
+        id: "v-bwa-12",
+        title: "Building Multimodal Agents with Gemma 3",
+        description: "Create advanced multimodal agents leveraging the capabilities of Gemma 3.",
+        youtubeId: "wVBrl3d93II",
+        youtubeUrl: "https://youtu.be/wVBrl3d93II",
+        speakerId: "s-bwa-12",
+        programId: "build-with-ai",
+        date: "2024-09-11",
+        duration: "44:06",
+        views: 59,
+        tags: ["Gemma 3", "Multimodal", "Agents"]
+    },
+    {
+        id: "v-bwa-13",
+        title: "Just-In-Time Access with Google Cloud PAM, Terraform & Okta",
+        description: "Implement Just-In-Time access controls using Google Cloud PAM, Terraform, and Okta integration.",
+        youtubeId: "7gPxWr2Tv-w",
+        youtubeUrl: "https://youtu.be/7gPxWr2Tv-w",
+        speakerId: "s-bwa-13",
+        programId: "build-with-ai",
+        date: "2024-09-25",
+        duration: "1:36:06",
+        views: 9,
+        tags: ["Google Cloud", "Okta", "Security"]
     },
     // New Community Talks & Special Sessions
     {
