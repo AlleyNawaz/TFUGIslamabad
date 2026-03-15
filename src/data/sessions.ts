@@ -236,6 +236,19 @@ export const sessions: VideoSession[] = [
         views: 114,
         tags: ["ADK", "AntiGravity", "Real-Time"]
     },
+    {
+        id: "v-ml-19",
+        title: "Understanding Attention Mechanisms in Modern AI Systems",
+        description: "A deep dive into attention mechanisms in modern AI architectures and systems.",
+        youtubeId: "SMAAQftu4Q0",
+        youtubeUrl: "https://youtu.be/SMAAQftu4Q0",
+        speakerId: "imran-us-salam",
+        programId: "study-jams",
+        date: "2026-03-15",
+        duration: "1:11:04",
+        views: 10,
+        tags: ["Attention Mechanisms", "AI Systems", "LLM"]
+    },
     // New AI/ML Paper Reading and Writing Clubs Sessions
     {
         id: "v-pr-1",
