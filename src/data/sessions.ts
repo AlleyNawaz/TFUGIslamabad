@@ -8,11 +8,11 @@ export const sessions: VideoSession[] = [
         description: "Exploring the latest in machine learning, from computer vision to generative AI with TensorFlow.",
         youtubeId: "wv5oVrh86dk",
         youtubeUrl: "https://youtu.be/wv5oVrh86dk",
-        speakerId: "s-ml-1",
+        speakerId: "nitin-tiwari",
         programId: "study-jams",
-        date: "2024-05-15",
+        date: "2024-05-11",
         duration: "45:00",
-        views: 310,
+        views: 141,
         tags: ["ML", "TensorFlow", "GenAI"]
     },
     {
@@ -21,11 +21,11 @@ export const sessions: VideoSession[] = [
         description: "A deep dive into natural language processing and deep learning applications using TensorFlow.",
         youtubeId: "7UJTQqHlUeU",
         youtubeUrl: "https://youtu.be/7UJTQqHlUeU",
-        speakerId: "s-ml-2",
+        speakerId: "maaz-ali",
         programId: "study-jams",
-        date: "2024-05-22",
+        date: "2024-05-18",
         duration: "50:00",
-        views: 250,
+        views: 144,
         tags: ["NLP", "Deep Learning", "TensorFlow"]
     },
     {
@@ -34,11 +34,11 @@ export const sessions: VideoSession[] = [
         description: "Learn how to build sophisticated chatbots using Google's open-weight Gemma models.",
         youtubeId: "ALQJ72GGJIo",
         youtubeUrl: "https://youtu.be/ALQJ72GGJIo",
-        speakerId: "s-ml-3",
+        speakerId: "abdul-raheem",
         programId: "study-jams",
-        date: "2024-06-01",
+        date: "2024-05-25",
         duration: "1:00:00",
-        views: 400,
+        views: 83,
         tags: ["Gemma", "LLM", "Chatbots"]
     },
     {
@@ -47,11 +47,11 @@ export const sessions: VideoSession[] = [
         description: "An introduction to PaliGemma, Google's cutting-edge vision-language model architecture.",
         youtubeId: "igI4sJITq7Y",
         youtubeUrl: "https://youtu.be/igI4sJITq7Y",
-        speakerId: "s-ml-4",
+        speakerId: "ritwik-raha",
         programId: "study-jams",
-        date: "2024-06-08",
+        date: "2024-05-26",
         duration: "40:00",
-        views: 350,
+        views: 98,
         tags: ["PaliGemma", "Vision", "LLM"]
     },
     {
@@ -60,11 +60,11 @@ export const sessions: VideoSession[] = [
         description: "Optimize your models effectively using hyperparameter tuning techniques on Google Cloud Platform.",
         youtubeId: "rVhUZ2iFE-w",
         youtubeUrl: "https://youtu.be/rVhUZ2iFE-w",
-        speakerId: "s-ml-5",
+        speakerId: "imran-us-salam",
         programId: "study-jams",
-        date: "2024-06-15",
+        date: "2024-06-01",
         duration: "55:00",
-        views: 180,
+        views: 44,
         tags: ["Hyperparameters", "TensorFlow", "GCP"]
     },
     {
@@ -73,11 +73,11 @@ export const sessions: VideoSession[] = [
         description: "Techniques to reduce model size and improve latency through quantization in TensorFlow.",
         youtubeId: "R-LL8ve5Jfc",
         youtubeUrl: "https://youtu.be/R-LL8ve5Jfc",
-        speakerId: "s-ml-6",
+        speakerId: "radostin-cholakov",
         programId: "study-jams",
-        date: "2024-06-22",
+        date: "2024-06-02",
         duration: "45:00",
-        views: 210,
+        views: 120,
         tags: ["Quantization", "TensorFlow", "Optimization"]
     },
     {
@@ -86,11 +86,11 @@ export const sessions: VideoSession[] = [
         description: "Master the art of prompt engineering to get the best responses from large language models.",
         youtubeId: "A5qM9O1LaCE",
         youtubeUrl: "https://youtu.be/A5qM9O1LaCE",
-        speakerId: "s-ml-7",
+        speakerId: "pedro-gabriel",
         programId: "study-jams",
-        date: "2024-06-29",
+        date: "2024-06-16",
         duration: "35:00",
-        views: 500,
+        views: 78,
         tags: ["Prompt Engineering", "LLM"]
     },
     {
@@ -99,11 +99,11 @@ export const sessions: VideoSession[] = [
         description: "Live coding session demonstrating how to integrate Google Gemini AI into Flutter applications.",
         youtubeId: "yWNBpkOtIoM",
         youtubeUrl: "https://youtu.be/yWNBpkOtIoM",
-        speakerId: "s-ml-8",
+        speakerId: "suesi-tran",
         programId: "study-jams",
-        date: "2024-07-06",
+        date: "2024-06-23",
         duration: "1:10:00",
-        views: 600,
+        views: 635,
         tags: ["Gemini", "Flutter", "Mobile AI"]
     },
     {
@@ -112,11 +112,11 @@ export const sessions: VideoSession[] = [
         description: "Strategies to enhance prompts with context for more accurate and relevant LLM outputs.",
         youtubeId: "S14m-ivbLlE",
         youtubeUrl: "https://youtu.be/S14m-ivbLlE",
-        speakerId: "s-ml-9",
+        speakerId: "ashmi-banerjee",
         programId: "study-jams",
         date: "2024-07-13",
         duration: "40:00",
-        views: 280,
+        views: 88,
         tags: ["Prompt Engineering", "Context", "LLM"]
     },
     {
@@ -125,11 +125,11 @@ export const sessions: VideoSession[] = [
         description: "A guide on moving from legacy software systems to modern machine learning deployments.",
         youtubeId: "YhTXqnKDAs0",
         youtubeUrl: "https://youtu.be/YhTXqnKDAs0",
-        speakerId: "s-ml-10",
+        speakerId: "sami-ullah",
         programId: "study-jams",
-        date: "2024-07-20",
+        date: "2024-08-04",
         duration: "50:00",
-        views: 220,
+        views: 395,
         tags: ["MLOps", "Deployment", "Legacy Systems"]
     },
     {
@@ -138,11 +138,11 @@ export const sessions: VideoSession[] = [
         description: "Discussing the pivotal role of open source communities and tools in the advancement of ML.",
         youtubeId: "uqFMLZw95DQ",
         youtubeUrl: "https://youtu.be/uqFMLZw95DQ",
-        speakerId: "s-ml-11",
+        speakerId: "ahmad-anis",
         programId: "study-jams",
-        date: "2024-07-27",
+        date: "2024-10-19",
         duration: "45:00",
-        views: 300,
+        views: 107,
         tags: ["Open Source", "ML", "Community"]
     },
     {
@@ -151,11 +151,11 @@ export const sessions: VideoSession[] = [
         description: "A critical look at the complexity and rapid pace of current AI developments.",
         youtubeId: "Vp1ylfxH30c",
         youtubeUrl: "https://youtu.be/Vp1ylfxH30c",
-        speakerId: "s-ml-12",
+        speakerId: "huzaifa-khan",
         programId: "study-jams",
-        date: "2024-08-03",
+        date: "2024-12-15",
         duration: "55:00",
-        views: 450,
+        views: 154,
         tags: ["AI Ethics", "Future of AI"]
     },
     {
@@ -164,11 +164,11 @@ export const sessions: VideoSession[] = [
         description: "How AI is transforming the landscape of education and engineering disciplines.",
         youtubeId: "kUMyISSilJU",
         youtubeUrl: "https://youtu.be/kUMyISSilJU",
-        speakerId: "s-ml-13",
+        speakerId: "mashhood-rastgar",
         programId: "study-jams",
-        date: "2024-08-10",
+        date: "2024-12-20",
         duration: "50:00",
-        views: 350,
+        views: 52,
         tags: ["Education", "AI", "Engineering"]
     },
     {
@@ -177,11 +177,11 @@ export const sessions: VideoSession[] = [
         description: "Analyzing the impact of algorithms and data science on social media and society.",
         youtubeId: "cSiW_M9_R0s",
         youtubeUrl: "https://youtu.be/cSiW_M9_R0s",
-        speakerId: "s-ml-14",
+        speakerId: "hashim-nadeem",
         programId: "study-jams",
-        date: "2024-08-17",
+        date: "2024-12-22",
         duration: "45:00",
-        views: 400,
+        views: 97,
         tags: ["Social Media", "Data Science", "Society"]
     },
     {
@@ -190,11 +190,11 @@ export const sessions: VideoSession[] = [
         description: "Deep dive into LLMs, prompt engineering, and attention mechanisms for context-aware AI.",
         youtubeId: "At2aFKsA8No",
         youtubeUrl: "https://youtu.be/At2aFKsA8No",
-        speakerId: "s-ml-15",
+        speakerId: "ehtisham-raza",
         programId: "study-jams",
-        date: "2024-08-24",
+        date: "2025-03-16",
         duration: "1:00:00",
-        views: 550,
+        views: 86,
         tags: ["LLM", "Attention", "Context"]
     },
     {
@@ -203,11 +203,11 @@ export const sessions: VideoSession[] = [
         description: "Creating autonomous agents using the lightweight and open Gemma models.",
         youtubeId: "VYzYfnw2nRA",
         youtubeUrl: "https://youtu.be/VYzYfnw2nRA",
-        speakerId: "s-ml-16",
+        speakerId: "karthik-muthuswamy",
         programId: "study-jams",
-        date: "2024-08-31",
+        date: "2025-04-13",
         duration: "50:00",
-        views: 420,
+        views: 34,
         tags: ["Agents", "Gemma", "AI"]
     },
     {
@@ -216,11 +216,11 @@ export const sessions: VideoSession[] = [
         description: "Step-by-step guide to building AI agents using Google's Agent Development Kit and Vertex AI.",
         youtubeId: "bcLwZhlDQ00",
         youtubeUrl: "https://youtu.be/bcLwZhlDQ00",
-        speakerId: "s-ml-17",
+        speakerId: "muhammad-ahsan-ayaz",
         programId: "study-jams",
-        date: "2024-09-07",
+        date: "2025-08-31",
         duration: "55:00",
-        views: 380,
+        views: 87,
         tags: ["ADK", "Vertex AI", "Agents"]
     },
     {
@@ -229,11 +229,11 @@ export const sessions: VideoSession[] = [
         description: "Advanced session on using ADK for real-time transactional querying with AntiGravity Agents.",
         youtubeId: "8KpLw6p4p30",
         youtubeUrl: "https://youtu.be/8KpLw6p4p30",
-        speakerId: "s-ml-18",
+        speakerId: "ehtisham-raza",
         programId: "study-jams",
-        date: "2024-09-14",
+        date: "2025-12-21",
         duration: "1:05:00",
-        views: 600,
+        views: 114,
         tags: ["ADK", "AntiGravity", "Real-Time"]
     },
     // New AI/ML Paper Reading and Writing Clubs Sessions
@@ -243,11 +243,11 @@ export const sessions: VideoSession[] = [
         description: "Reviewing the LoRA paper and its impact on efficient fine-tuning of LLMs.",
         youtubeId: "L6d50UlyHIU",
         youtubeUrl: "https://youtu.be/L6d50UlyHIU",
-        speakerId: "s-pr-1",
+        speakerId: "aashi-dutt",
         programId: "paper-reading",
-        date: "2024-03-10",
+        date: "2024-06-23",
         duration: "1:20:00",
-        views: 600,
+        views: 61,
         tags: ["LoRA", "LLM", "Fine-tuning"]
     },
     {
@@ -256,11 +256,11 @@ export const sessions: VideoSession[] = [
         description: "A foundational deep dive into the Transformer architecture paper.",
         youtubeId: "c7bZoiCbw6Y",
         youtubeUrl: "https://youtu.be/c7bZoiCbw6Y",
-        speakerId: "s-pr-2",
+        speakerId: "maaz-ali",
         programId: "paper-reading",
-        date: "2024-03-24",
+        date: "2024-07-28",
         duration: "1:15:00",
-        views: 1500,
+        views: 332,
         tags: ["Transformer", "Attention", "NLP"]
     },
     {
@@ -269,11 +269,11 @@ export const sessions: VideoSession[] = [
         description: "Key strategies and tips for writing and publishing high-impact machine learning research.",
         youtubeId: "iCgdLwUCTcc",
         youtubeUrl: "https://youtu.be/iCgdLwUCTcc",
-        speakerId: "s-pr-3",
+        speakerId: "maaz-ali",
         programId: "paper-reading",
-        date: "2024-04-07",
+        date: "2024-09-28",
         duration: "1:00:00",
-        views: 450,
+        views: 176,
         tags: ["Research", "Writing", "Publication"]
     },
     {
@@ -282,11 +282,11 @@ export const sessions: VideoSession[] = [
         description: "Exploring the intersection of recommender systems and multimodal large language models.",
         youtubeId: "iU9W6AH8SP0",
         youtubeUrl: "https://youtu.be/iU9W6AH8SP0",
-        speakerId: "s-pr-4",
+        speakerId: "anmol-zehrah",
         programId: "paper-reading",
-        date: "2024-04-21",
+        date: "2025-05-25",
         duration: "55:00",
-        views: 320,
+        views: 168,
         tags: ["Recommender Systems", "Multimodal", "LLM"]
     },
     {
@@ -295,11 +295,11 @@ export const sessions: VideoSession[] = [
         description: "Revisiting the classic MapReduce paper and its relevance to modern big data processing.",
         youtubeId: "VTB227bPZA0",
         youtubeUrl: "https://youtu.be/VTB227bPZA0",
-        speakerId: "s-pr-5",
+        speakerId: "anmol-zehrah",
         programId: "paper-reading",
-        date: "2024-05-05",
+        date: "2025-11-29",
         duration: "1:10:00",
-        views: 280,
+        views: 121,
         tags: ["MapReduce", "Big Data", "Distributed Systems"]
     },
     {
@@ -308,11 +308,11 @@ export const sessions: VideoSession[] = [
         description: "Analyzing SAGANs and how self-attention improves GAN performance.",
         youtubeId: "tpg69h46adM",
         youtubeUrl: "https://youtu.be/tpg69h46adM",
-        speakerId: "s-pr-6",
+        speakerId: "anmol-zehrah",
         programId: "paper-reading",
-        date: "2024-05-19",
+        date: "2025-12-12",
         duration: "1:05:00",
-        views: 350,
+        views: 151,
         tags: ["GAN", "Self-Attention", "Generative AI"]
     },
     {
@@ -321,11 +321,11 @@ export const sessions: VideoSession[] = [
         description: "A detailed look at OpenAI's CLIP model and zero-shot transfer capabilities.",
         youtubeId: "bqq7TVCtkks",
         youtubeUrl: "https://youtu.be/bqq7TVCtkks",
-        speakerId: "s-pr-7",
+        speakerId: "syeda-aiman",
         programId: "paper-reading",
-        date: "2024-06-02",
+        date: "2026-01-03",
         duration: "1:25:00",
-        views: 800,
+        views: 197,
         tags: ["CLIP", "Computer Vision", "Multimodal"]
     },
     {
@@ -336,7 +336,7 @@ export const sessions: VideoSession[] = [
         youtubeUrl: "https://youtu.be/0OyuZZVY5zM",
         speakerId: "anmol-zehrah",
         programId: "paper-reading",
-        date: "2024-06-16",
+        date: "2026-02-27",
         duration: "1:06:22",
         views: 36,
         tags: ["AGI", "Safety", "AI"]
@@ -349,7 +349,7 @@ export const sessions: VideoSession[] = [
         youtubeUrl: "https://youtu.be/lal40ZGtV8Y",
         speakerId: "urooj-fatima",
         programId: "paper-reading",
-        date: "2024-06-30",
+        date: "2026-03-01",
         duration: "22:08",
         views: 32,
         tags: ["GenAI", "GenXAI", "Explainable AI"]
@@ -361,11 +361,11 @@ export const sessions: VideoSession[] = [
         description: "Building the statistical foundation required for understanding machine learning algorithms.",
         youtubeId: "-0iL2z7ZRYo",
         youtubeUrl: "https://youtu.be/-0iL2z7ZRYo",
-        speakerId: "s-math-1",
+        speakerId: "kartikey-rawat",
         programId: "math-club",
-        date: "2024-02-15",
+        date: "2024-06-30",
         duration: "44:51",
-        views: 400,
+        views: 57,
         tags: ["Statistics", "Probability", "Math"]
     },
     {
@@ -374,11 +374,11 @@ export const sessions: VideoSession[] = [
         description: "Understanding optimization algorithms like Gradient Descent from a mathematical perspective.",
         youtubeId: "Tsiha0Yoa1Y",
         youtubeUrl: "https://youtu.be/Tsiha0Yoa1Y",
-        speakerId: "s-math-2",
+        speakerId: "ammar-jamshed",
         programId: "math-club",
-        date: "2024-02-29",
+        date: "2024-12-29",
         duration: "36:16",
-        views: 350,
+        views: 66,
         tags: ["Optimization", "Gradient Descent", "Math"]
     },
     {
@@ -387,11 +387,11 @@ export const sessions: VideoSession[] = [
         description: "A mathematical breakdown of the self-attention mechanism that powers Transformers.",
         youtubeId: "F_jczQeCPh8",
         youtubeUrl: "https://youtu.be/F_jczQeCPh8",
-        speakerId: "s-math-3",
+        speakerId: "ehtisham-raza",
         programId: "math-club",
-        date: "2024-03-14",
+        date: "2025-06-21",
         duration: "27:24",
-        views: 600,
+        views: 184,
         tags: ["Self-Attention", "Transformers", "Math"]
     },
     // New Build with AI Sessions
@@ -401,11 +401,11 @@ export const sessions: VideoSession[] = [
         description: "Comparing Vision Transformers and CNNs to understand the future of computer vision architectures.",
         youtubeId: "jLlCbCB87C8",
         youtubeUrl: "https://youtu.be/jLlCbCB87C8",
-        speakerId: "s-bwa-1",
+        speakerId: "anmol-zehrah",
         programId: "build-with-ai",
-        date: "2024-04-10",
+        date: "2025-05-03",
         duration: "37:09",
-        views: 450,
+        views: 171,
         tags: ["Vision Transformers", "CNN", "Computer Vision"]
     },
     {
@@ -414,11 +414,11 @@ export const sessions: VideoSession[] = [
         description: "Comprehensive guide to creating and deploying robust AI agents using Google's ecosystem.",
         youtubeId: "p3sbgfmrna0",
         youtubeUrl: "https://youtu.be/p3sbgfmrna0",
-        speakerId: "s-bwa-2",
+        speakerId: "muhammad-ahsan-ayaz",
         programId: "build-with-ai",
-        date: "2024-04-24",
+        date: "2025-05-17",
         duration: "1:39:42",
-        views: 800,
+        views: 153,
         tags: ["ADK", "Vertex AI", "Agents"]
     },
     {
@@ -427,11 +427,11 @@ export const sessions: VideoSession[] = [
         description: "Mastering prompt engineering and multimodal capabilities with Google's Gemini models.",
         youtubeId: "9HNX_c7m5qk",
         youtubeUrl: "https://youtu.be/9HNX_c7m5qk",
-        speakerId: "s-bwa-3",
+        speakerId: "abdul-raheem",
         programId: "build-with-ai",
-        date: "2024-05-08",
+        date: "2025-05-31",
         duration: "51:03",
-        views: 1200,
+        views: 49,
         tags: ["Gemini", "Prompt Engineering", "Multimodal"]
     },
     {
@@ -440,11 +440,11 @@ export const sessions: VideoSession[] = [
         description: "A practical hands-on session on building intelligent agents using Gemma 3.",
         youtubeId: "D-kFziJbN_w",
         youtubeUrl: "https://youtu.be/D-kFziJbN_w",
-        speakerId: "s-bwa-4",
+        speakerId: "mujeeb-ur-rehman",
         programId: "build-with-ai",
-        date: "2024-05-22",
+        date: "2025-06-14",
         duration: "59:31",
-        views: 650,
+        views: 27,
         tags: ["Gemma 3", "Agents", "Hands-on"]
     },
     {
@@ -453,11 +453,11 @@ export const sessions: VideoSession[] = [
         description: "Discussing how the AI revolution is reshaping the landscape of software engineering.",
         youtubeId: "cBC6QFU9TaQ",
         youtubeUrl: "https://youtu.be/cBC6QFU9TaQ",
-        speakerId: "s-bwa-5",
+        speakerId: "mashhood-rastgar",
         programId: "build-with-ai",
-        date: "2024-06-05",
+        date: "2025-06-15",
         duration: "50:25",
-        views: 500,
+        views: 72,
         tags: ["Future of AI", "Software Engineering", "Trends"]
     },
     {
@@ -466,11 +466,11 @@ export const sessions: VideoSession[] = [
         description: "Introduction to building intelligent systems using Google's Agent Development Kit.",
         youtubeId: "fTJia9qNK0M",
         youtubeUrl: "https://youtu.be/fTJia9qNK0M",
-        speakerId: "s-bwa-6",
+        speakerId: "kshitiz-rimal",
         programId: "build-with-ai",
-        date: "2024-06-19",
+        date: "2025-07-20",
         duration: "50:00",
-        views: 400,
+        views: 144,
         tags: ["ADK", "Intelligent Systems", "Agents"]
     },
     {
@@ -479,11 +479,11 @@ export const sessions: VideoSession[] = [
         description: "From crafting effective prompts to deploying models in production using Google AI Studio.",
         youtubeId: "t2ID2giq4LQ",
         youtubeUrl: "https://youtu.be/t2ID2giq4LQ",
-        speakerId: "s-bwa-7",
+        speakerId: "ehtisham-raza",
         programId: "build-with-ai",
-        date: "2024-07-03",
+        date: "2025-07-27",
         duration: "30:01",
-        views: 600,
+        views: 129,
         tags: ["Google AI Studio", "Production", "Prompts"]
     },
     {
@@ -492,9 +492,9 @@ export const sessions: VideoSession[] = [
         description: "Learn how to build your own AI Agent using Gemini 3 and the Agent Development Kit.",
         youtubeId: "hIZsbN5LIRw",
         youtubeUrl: "https://youtu.be/hIZsbN5LIRw",
-        speakerId: "s-bwa-8",
+        speakerId: "eya-laouini",
         programId: "build-with-ai",
-        date: "2024-07-17",
+        date: "2026-02-21",
         duration: "2:57:25",
         views: 177,
         tags: ["Gemini 3", "ADK", "Agents"]
@@ -505,9 +505,9 @@ export const sessions: VideoSession[] = [
         description: "Enhance your Gemini CLI by integrating powerful agent skills.",
         youtubeId: "-PQO8rWg6f8",
         youtubeUrl: "https://youtu.be/-PQO8rWg6f8",
-        speakerId: "s-bwa-9",
+        speakerId: "connie-leung",
         programId: "build-with-ai",
-        date: "2024-07-31",
+        date: "2026-02-22",
         duration: "1:01:00",
         views: 75,
         tags: ["Gemini", "CLI", "Skills"]
@@ -518,9 +518,9 @@ export const sessions: VideoSession[] = [
         description: "Learn how to integrate and code with offline AI models in Android Studio and VSCode.",
         youtubeId: "BhuqXrP9ST0",
         youtubeUrl: "https://youtu.be/BhuqXrP9ST0",
-        speakerId: "s-bwa-10",
+        speakerId: "georgios-soloupis",
         programId: "build-with-ai",
-        date: "2024-08-14",
+        date: "2026-02-28",
         duration: "47:44",
         views: 58,
         tags: ["Android Studio", "VSCode", "Offline AI"]
@@ -531,11 +531,11 @@ export const sessions: VideoSession[] = [
         description: "A comprehensive guide on transitioning from a simple prompt to a fully working application.",
         youtubeId: "q55DdaPvyNA",
         youtubeUrl: "https://youtu.be/q55DdaPvyNA",
-        speakerId: "s-bwa-11",
+        speakerId: "tomek-porozynski",
         programId: "build-with-ai",
-        date: "2024-08-28",
+        date: "2026-03-06",
         duration: "51:43",
-        views: 61,
+        views: 62,
         tags: ["Google AI Studio", "Prompting"]
     },
     {
@@ -544,9 +544,9 @@ export const sessions: VideoSession[] = [
         description: "Create advanced multimodal agents leveraging the capabilities of Gemma 3.",
         youtubeId: "wVBrl3d93II",
         youtubeUrl: "https://youtu.be/wVBrl3d93II",
-        speakerId: "s-bwa-12",
+        speakerId: "ehtisham-raza",
         programId: "build-with-ai",
-        date: "2024-09-11",
+        date: "2026-03-07",
         duration: "44:06",
         views: 59,
         tags: ["Gemma 3", "Multimodal", "Agents"]
@@ -557,11 +557,11 @@ export const sessions: VideoSession[] = [
         description: "Implement Just-In-Time access controls using Google Cloud PAM, Terraform, and Okta integration.",
         youtubeId: "7gPxWr2Tv-w",
         youtubeUrl: "https://youtu.be/7gPxWr2Tv-w",
-        speakerId: "s-bwa-13",
+        speakerId: "damian-sztankowski",
         programId: "build-with-ai",
-        date: "2024-09-25",
+        date: "2026-03-14",
         duration: "1:36:06",
-        views: 9,
+        views: 10,
         tags: ["Google Cloud", "Okta", "Security"]
     },
     // New Community Talks & Special Sessions
@@ -571,11 +571,11 @@ export const sessions: VideoSession[] = [
         description: "Deep dive into building advanced RAG systems using Gemini Pro and Vertex AI.",
         youtubeId: "vAzVZ0jX3qs",
         youtubeUrl: "https://youtu.be/vAzVZ0jX3qs",
-        speakerId: "s-ct-1",
+        speakerId: "mughees-awan",
         programId: "community-talks",
-        date: "2024-07-20",
+        date: "2024-03-31",
         duration: "55:49",
-        views: 600,
+        views: 217,
         tags: ["RAG", "Gemini Pro", "Vertex AI"]
     },
     {
@@ -584,11 +584,11 @@ export const sessions: VideoSession[] = [
         description: "Day 1 of a comprehensive workshop on Generative AI and LLMs.",
         youtubeId: "T9qEfnwt66A",
         youtubeUrl: "https://youtu.be/T9qEfnwt66A",
-        speakerId: "s-ct-2",
+        speakerId: "ehtisham-raza",
         programId: "community-talks",
-        date: "2024-08-03",
+        date: "2024-03-30",
         duration: "1:54:24",
-        views: 1200,
+        views: 103,
         tags: ["GenAI", "LLM", "Workshop"]
     },
     {
@@ -597,11 +597,11 @@ export const sessions: VideoSession[] = [
         description: "Day 2 continuing the deep dive into Generative AI and LLM applications.",
         youtubeId: "TKCDfLrij_s",
         youtubeUrl: "https://youtu.be/TKCDfLrij_s",
-        speakerId: "s-ct-3",
+        speakerId: "ehtisham-raza",
         programId: "community-talks",
-        date: "2024-08-04",
+        date: "2024-03-31",
         duration: "1:43:01",
-        views: 950,
+        views: 56,
         tags: ["GenAI", "LLM", "Workshop"]
     },
     {
@@ -610,11 +610,11 @@ export const sessions: VideoSession[] = [
         description: "An introductory workshop to get started with Google's Gemini models.",
         youtubeId: "9WEYrwCG6ro",
         youtubeUrl: "https://youtu.be/9WEYrwCG6ro",
-        speakerId: "s-ct-4",
+        speakerId: "karthik-muthuswamy",
         programId: "community-talks",
-        date: "2024-08-15",
+        date: "2024-05-12",
         duration: "53:37",
-        views: 700,
+        views: 84,
         tags: ["Gemini", "Workshop", "Intro"]
     },
     {
@@ -623,11 +623,11 @@ export const sessions: VideoSession[] = [
         description: "Learn best practices for deploying machine learning models to the cloud.",
         youtubeId: "ADfaS0xS2lk",
         youtubeUrl: "https://youtu.be/ADfaS0xS2lk",
-        speakerId: "s-ct-5",
+        speakerId: "ehtisham-raza",
         programId: "community-talks",
-        date: "2024-08-25",
+        date: "2024-05-18",
         duration: "51:56",
-        views: 400,
+        views: 38,
         tags: ["Cloud", "Deployment", "MLOps"]
     },
     {
@@ -636,11 +636,11 @@ export const sessions: VideoSession[] = [
         description: "Insights and tips on preparing for technical interviews and landing a role at Google.",
         youtubeId: "Lp8i2jF8Q2E",
         youtubeUrl: "https://youtu.be/Lp8i2jF8Q2E",
-        speakerId: "s-ct-6",
+        speakerId: "abdur-rahman",
         programId: "community-talks",
-        date: "2024-09-01",
+        date: "2024-08-16",
         duration: "55:06",
-        views: 2000,
+        views: 69,
         tags: ["Career", "Google", "Interview"]
     },
     {
@@ -651,9 +651,9 @@ export const sessions: VideoSession[] = [
         youtubeUrl: "https://youtu.be/r0uD4SkQUBQ",
         speakerId: "s-ct-7",
         programId: "community-talks",
-        date: "2024-09-15",
+        date: "2024-10-18",
         duration: "1:24:55",
-        views: 600,
+        views: 22,
         tags: ["Chatbots", "Business", "Workshop"]
     },
     {
@@ -662,11 +662,11 @@ export const sessions: VideoSession[] = [
         description: "Advanced performance optimization strategies for Angular applications.",
         youtubeId: "jXbnBTg_CGg",
         youtubeUrl: "https://youtu.be/jXbnBTg_CGg",
-        speakerId: "s-ct-8",
+        speakerId: "sonu-kapoor",
         programId: "community-talks",
-        date: "2024-09-29",
+        date: "2025-08-02",
         duration: "25:59",
-        views: 350,
+        views: 128,
         tags: ["Angular", "Performance", "Web"]
     },
 ];

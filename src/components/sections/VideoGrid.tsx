@@ -2,9 +2,10 @@
 
 import { VideoSession } from "@/types";
 import { motion } from "framer-motion";
-import { PlayCircle, Clock, Calendar } from "lucide-react";
+import { PlayCircle, Clock, Calendar, Linkedin } from "lucide-react";
 import { speakers } from "@/data/speakers";
 import Image from "next/image";
+import tfugLogo from "@/images/tfuglogo.png";
 
 interface VideoGridProps {
     sessions: VideoSession[];
@@ -38,10 +39,11 @@ export function VideoGrid({ sessions }: VideoGridProps) {
 
                             {/* YouTube Thumbnail */}
                             <Image
-                                src={`https://img.youtube.com/vi/${session.youtubeId}/hqdefault.jpg`}
+                                src={`https://img.youtube.com/vi/${session.youtubeId}/hqdefault.jpg?v=1`}
                                 alt={session.title}
                                 fill
                                 className="object-cover"
+                                unoptimized
                             />
 
                             <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1">
@@ -49,7 +51,7 @@ export function VideoGrid({ sessions }: VideoGridProps) {
                             </div>
                         </div>
 
-                        <div className="p-6 flex-col flex-grow">
+                        <div className="p-6 flex flex-col flex-grow">
                             <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-3">
                                 <span className="flex items-center gap-1">
                                     <Calendar size={12} /> {new Date(session.date).toLocaleDateString()}
@@ -65,21 +67,32 @@ export function VideoGrid({ sessions }: VideoGridProps) {
                                 </a>
                             </h3>
 
-                            {speaker && (
-                                <div className="flex items-center gap-2 mt-auto pt-4 border-t border-slate-100 dark:border-slate-700">
-                                    <div className="relative w-6 h-6 rounded-full overflow-hidden bg-slate-200">
+                            <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-slate-700">
+                                <div className="flex items-center gap-2 truncate pr-2">
+                                    <div className="relative w-6 h-6 rounded-full overflow-hidden shrink-0 bg-slate-200">
                                         <Image
-                                            src={speaker.image}
-                                            alt={speaker.name}
+                                            src={speaker?.image || tfugLogo.src}
+                                            alt={speaker?.name || "TFUG Islamabad"}
                                             fill
                                             className="object-cover"
                                         />
                                     </div>
-                                    <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
-                                        {speaker.name}
+                                    <span className="text-sm font-medium text-slate-700 dark:text-slate-300 truncate">
+                                        {speaker?.name || "TFUG Islamabad"}
                                     </span>
                                 </div>
-                            )}
+                                {speaker?.socials?.linkedin && (
+                                    <a
+                                        href={speaker.socials.linkedin}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="shrink-0 text-slate-400 hover:text-[#0A66C2] transition-colors"
+                                        title={`Connect with ${speaker.name} on LinkedIn`}
+                                    >
+                                        <Linkedin size={18} />
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     </motion.div>
                 );
