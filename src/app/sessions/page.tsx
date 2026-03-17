@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Suspense } from "react";
 import { SessionsView } from "@/components/views/SessionsView";
 import { sessions } from "@/data/sessions";
 
@@ -55,7 +56,13 @@ export default function SessionsPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <SessionsView />
+            <Suspense fallback={
+                <div className="min-h-screen pb-20 pt-32 flex justify-center text-slate-500">
+                    Loading sessions...
+                </div>
+            }>
+                <SessionsView />
+            </Suspense>
         </>
     );
 }
