@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { blogs } from "@/data/blogs";
-import { Search, Sparkles } from "lucide-react";
+import { Search } from "lucide-react";
 import { FilterChips } from "@/components/blogs/FilterChips";
 import { BlogCard } from "@/components/blogs/BlogCard";
 

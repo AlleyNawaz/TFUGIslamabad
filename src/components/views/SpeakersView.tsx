@@ -125,7 +125,7 @@ function SpeakerModal({ speaker, onClose }: { speaker: Speaker | null; onClose: 
             if (rafId.current) cancelAnimationFrame(rafId.current);
             if (scrollRafId.current) cancelAnimationFrame(scrollRafId.current);
         };
-    }, [speaker]);
+    }, [speaker, isLowEndDevice]);
 
     return (
         <AnimatePresence>

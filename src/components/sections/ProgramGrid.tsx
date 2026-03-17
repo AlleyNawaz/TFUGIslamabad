@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Code, BookOpen, Sigma, Terminal, Sparkles, Mic, CheckCircle2, Users } from "lucide-react";
+import { ArrowRight, Code, BookOpen, Sigma, Terminal, Sparkles, Mic, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const icons = {

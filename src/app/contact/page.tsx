@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
-import { Mail, Twitter, Linkedin, ArrowRight, Sparkles, Users, Code, MessageCircle, Send, Globe, Mic, Zap, CheckCircle2 } from "lucide-react";
+import { Mail, Twitter, Linkedin, ArrowRight, Sparkles, Users, Send, Globe, Mic, Zap, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
@@ -72,7 +72,7 @@ const AvatarStack = () => {
     );
 };
 
-const JoinCard = ({ icon: Icon, title, description, cta, href, gradient }: { icon: any, title: string, description: string, cta: string, href: string, gradient: string }) => (
+const JoinCard = ({ icon: Icon, title, description, cta, href, gradient }: { icon: React.ElementType, title: string, description: string, cta: string, href: string, gradient: string }) => (
     <motion.div
         whileHover={{ y: -8 }}
         className="group p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-full"
@@ -322,7 +322,7 @@ export default function ContactPage() {
                         
                         <div className="relative z-10">
                             <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-2">Send us a Message</h2>
-                            <p className="text-slate-500 dark:text-slate-400 font-medium mb-10">Have questions? We'd love to hear from you.</p>
+                            <p className="text-slate-500 dark:text-slate-400 font-medium mb-10">Have questions? We&apos;d love to hear from you.</p>
 
                             {status === "success" ? (
                                 <motion.div 

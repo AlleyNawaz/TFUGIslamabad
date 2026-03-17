@@ -5,7 +5,6 @@ import {
     CheckCircle2, 
     Users, 
     Sparkles, 
-    Rocket, 
     Target, 
     Zap, 
     Link as LinkIcon, 
@@ -320,7 +319,7 @@ export default function AboutPage() {
                     <div className="relative z-10 px-8">
                         <h2 className="text-5xl md:text-6xl font-black mb-8 tracking-tight">Ready to start your AI journey?</h2>
                         <p className="text-xl text-blue-100/80 max-w-2xl mx-auto mb-12 font-medium">
-                            Join 3,500+ developers in Pakistan's most active AI community today.
+                            Join 3,500+ developers in Pakistan&apos;s most active AI community today.
                         </p>
                         <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 h-16 px-12 rounded-2xl font-black text-lg gap-3 uppercase tracking-wider">
                             Join the Community

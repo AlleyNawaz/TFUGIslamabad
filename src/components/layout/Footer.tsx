@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Twitter, Linkedin, Mail, Facebook, Instagram, ArrowUpRight, PlayCircle, Users } from "lucide-react";
+import { Twitter, Linkedin, Mail, Facebook, Instagram, PlayCircle, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 

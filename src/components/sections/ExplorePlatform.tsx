@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { PlayCircle, FileText, BookOpen, Users, ArrowUpRight } from "lucide-react";
+import { PlayCircle, FileText, Users, ArrowUpRight } from "lucide-react";
 
 const platformCards = [
     {
