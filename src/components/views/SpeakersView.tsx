@@ -4,19 +4,24 @@ import { gdes, googleSpeakers, industryExperts } from "@/data/speakers";
 import { Speaker } from "@/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { Linkedin, Twitter } from "lucide-react";
 
 // Reusable Speaker Card Component
-function SpeakerCard({ speaker, index }: { speaker: Speaker; index: number }) {
+function SpeakerCard({ speaker, index, typeType }: { speaker: Speaker; index: number, typeType: string }) {
+    const sessionHref = `/sessions?speakerType=${typeType}&q=${encodeURIComponent(speaker.name)}`;
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
-            className="group flex flex-col items-center text-center"
+            className="group flex flex-col items-center text-center relative"
         >
-            <div className="relative w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-slate-100 dark:border-slate-800 group-hover:border-blue-500 transition-colors">
+            <Link href={sessionHref} className="absolute inset-0 z-0 rounded-2xl cursor-pointer" aria-label={`View sessions by ${speaker.name}`} />
+            
+            <div className="relative w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-slate-100 dark:border-slate-800 group-hover:border-blue-500 transition-colors pointer-events-none z-10">
                 <Image
                     src={speaker.image}
                     alt={speaker.name}
@@ -25,22 +30,22 @@ function SpeakerCard({ speaker, index }: { speaker: Speaker; index: number }) {
                 />
             </div>
 
-            <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1 relative z-10 pointer-events-none">
                 {speaker.name}
             </h3>
 
-            <p className="text-sm font-medium text-blue-600 dark:text-blue-400 mb-1">
+            <p className="text-sm font-medium text-blue-600 dark:text-blue-400 mb-1 relative z-10 pointer-events-none">
                 {speaker.role}
             </p>
 
             {speaker.company && (
-                <p className="text-xs text-slate-500 dark:text-slate-500 mb-2">
+                <p className="text-xs text-slate-500 dark:text-slate-500 mb-2 relative z-10 pointer-events-none">
                     {speaker.company}
                 </p>
             )}
 
             {/* Socials */}
-            <div className="flex gap-3 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10">
+            <div className="flex gap-3 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-20">
                 {speaker.socials?.twitter && (
                     <a
                         href={speaker.socials.twitter}
@@ -96,7 +101,7 @@ export function SpeakersView() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                         {googleSpeakers.map((speaker, index) => (
-                            <SpeakerCard key={speaker.id} speaker={speaker} index={index} />
+                            <SpeakerCard key={speaker.id} speaker={speaker} index={index} typeType="google" />
                         ))}
                     </div>
                 </section>
@@ -113,7 +118,7 @@ export function SpeakersView() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                         {gdes.map((speaker, index) => (
-                            <SpeakerCard key={speaker.id} speaker={speaker} index={index} />
+                            <SpeakerCard key={speaker.id} speaker={speaker} index={index} typeType="gde" />
                         ))}
                     </div>
                 </section>
@@ -130,7 +135,7 @@ export function SpeakersView() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
                         {industryExperts.map((speaker, index) => (
-                            <SpeakerCard key={speaker.id} speaker={speaker} index={index} />
+                            <SpeakerCard key={speaker.id} speaker={speaker} index={index} typeType="industry" />
                         ))}
                     </div>
                 </section>

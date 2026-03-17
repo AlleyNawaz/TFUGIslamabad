@@ -9,11 +9,14 @@ import tfugLogo from "@/images/tfuglogo.png";
 
 interface VideoGridProps {
     sessions: VideoSession[];
+    viewMode?: "grid" | "list";
 }
 
-export function VideoGrid({ sessions }: VideoGridProps) {
+export function VideoGrid({ sessions, viewMode = "grid" }: VideoGridProps) {
+    const isList = viewMode === "list";
+
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className={isList ? "flex flex-col gap-4 md:gap-6" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"}>
             {sessions.map((session, index) => {
                 const speaker = speakers.find((s) => s.id === session.speakerId);
 
@@ -23,11 +26,15 @@ export function VideoGrid({ sessions }: VideoGridProps) {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.05 }}
-                        className="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-slate-200 dark:border-slate-700"
+                        transition={{ duration: 0.4, delay: Math.min(index * 0.05, 0.5) }}
+                        className={`group flex bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-slate-200 dark:border-slate-700 ${
+                            isList ? "flex-col sm:flex-row h-auto sm:h-56" : "flex-col"
+                        }`}
                     >
                         {/* Thumbnail */}
-                        <div className="relative aspect-video bg-slate-100 dark:bg-slate-900 overflow-hidden group-hover:brightness-90 transition-all">
+                        <div className={`relative bg-slate-100 dark:bg-slate-900 overflow-hidden group-hover:brightness-90 transition-all shrink-0 ${
+                            isList ? "w-full sm:w-80 h-48 sm:h-full" : "aspect-video w-full"
+                        }`}>
                             <a
                                 href={session.youtubeUrl}
                                 target="_blank"
@@ -51,7 +58,7 @@ export function VideoGrid({ sessions }: VideoGridProps) {
                             </div>
                         </div>
 
-                        <div className="p-6 flex flex-col flex-grow">
+                        <div className={`p-6 flex flex-col flex-grow ${isList ? "justify-center" : ""}`}>
                             <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-3">
                                 <span className="flex items-center gap-1">
                                     <Calendar size={12} /> {new Date(session.date).toLocaleDateString()}
