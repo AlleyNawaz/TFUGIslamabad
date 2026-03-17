@@ -10,13 +10,13 @@ const allSpeakers = [...gdes, ...googleSpeakers, ...industryExperts];
 
 export function FeaturedSpeakers() {
     return (
-        <section className="py-20 bg-white dark:bg-slate-950 overflow-hidden">
+        <section className="py-24 relative z-10 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
-                        Community Leaders & Experts
+                    <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6">
+                        Community Leaders
                     </h2>
-                    <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                    <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
                         Learn from Google Developer Experts and industry researchers.
                     </p>
                 </div>
@@ -84,7 +84,7 @@ export function FeaturedSpeakers() {
                 <div className="text-center">
                     <Link
                         href="/speakers"
-                        className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                        className="inline-flex items-center justify-center px-8 py-4 border border-slate-200 dark:border-slate-700 text-base font-semibold rounded-full text-slate-900 dark:text-white bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition-all hover:scale-105 shadow-sm"
                     >
                         Meet All Speakers
                     </Link>

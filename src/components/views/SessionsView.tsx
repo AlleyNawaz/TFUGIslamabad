@@ -21,7 +21,10 @@ export function SessionsView() {
     const pathname = usePathname();
     const searchParams = useSearchParams();
 
-    const [category, setCategory] = useState(searchParams.get("category") || "all");
+    const campaignParams = searchParams.get("campaign") || searchParams.get("category");
+    const initialCategory = campaignParams === "paper-clubs" ? "paper-reading" : (campaignParams || "all");
+
+    const [category, setCategory] = useState(initialCategory);
     const [speakerType, setSpeakerType] = useState(searchParams.get("speakerType") || "all");
     const [sortBy, setSortBy] = useState(searchParams.get("sort") || "newest");
     const [searchQuery, setSearchQuery] = useState(searchParams.get("q") || "");
@@ -152,8 +155,8 @@ export function SessionsView() {
                     Browse through our complete library of talks, workshops, and study jams.
                 </p>
 
-                {/* Premium Sticky Filter Header */}
-                <div className="sticky top-20 z-40 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 p-4 mb-10">
+                {/* Premium Filter Header - No longer sticky as per user request */}
+                <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 p-4 mb-10 transition-all duration-300">
                     
                     {/* Top Row: Search & Mobile Toggle */}
                     <div className="flex items-center justify-between gap-4 mb-4 lg:mb-0 lg:hidden">

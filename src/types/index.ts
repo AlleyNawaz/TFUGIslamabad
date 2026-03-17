@@ -42,6 +42,8 @@ export interface Blog {
   title: string;
   excerpt: string;
   author: string;
+  authorImage?: string;
+  authorSocial?: string;
   publishDate: string;
   platform: 'Medium' | 'Dev.to' | 'Other';
   url: string;

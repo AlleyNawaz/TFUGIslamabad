@@ -192,6 +192,7 @@ export const googleSpeakers: Speaker[] = [
         role: "Senior Product Lead",
         company: "Google",
         image: abdurImg.src,
+        bio: "Strategist at Google focused on product innovation and large-scale AI implementation. Leading cross-functional teams to build the future of intelligent products.",
         socials: { linkedin: "https://www.linkedin.com/in/abdur-byc/" }
     },
     {
@@ -200,6 +201,7 @@ export const googleSpeakers: Speaker[] = [
         role: "Machine Learning, CEML",
         company: "Google",
         image: ritwikImg.src,
+        bio: "Specialist in Cloud Machine Learning at Google. Working with enterprise partners to solve complex engineering challenges through advanced AI architectural patterns.",
         socials: { linkedin: "https://www.linkedin.com/in/ritwik-raha/" }
     },
 ];

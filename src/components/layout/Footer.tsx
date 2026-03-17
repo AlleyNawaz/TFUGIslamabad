@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { Twitter, Linkedin, Mail, Facebook, Instagram } from "lucide-react";
+import { Twitter, Linkedin, Mail, Facebook, Instagram, ArrowUpRight, PlayCircle, Users } from "lucide-react";
+import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const Discord = ({ size = 24, className = "" }: { size?: number, className?: string }) => (
     <svg
@@ -30,44 +34,103 @@ const WhatsApp = ({ size = 24, className = "" }: { size?: number, className?: st
     </svg>
 );
 
-
-
 export function Footer() {
+    const pathname = usePathname();
+    const isHomePage = pathname === "/";
+
     return (
-        <footer className="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div className="space-y-4">
-                        <h3 className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
+        <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 mt-24">
+            
+            {/* LAYER 1 — POWER SECTION (CTA) */}
+            {isHomePage && (
+                <div className="max-w-7xl mx-auto px-6 pt-12">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="relative rounded-3xl p-8 md:p-12 overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-500/5 dark:to-purple-500/5 border border-blue-100/50 dark:border-blue-500/10"
+                    >
+                        {/* Subtle Glow */}
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] -translate-y-1/2 translate-x-1/2" />
+                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 blur-[100px] translate-y-1/2 -translate-x-1/2" />
+
+                        <div className="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
+                            <div className="max-w-xl text-center md:text-left">
+                                <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">
+                                    Build with TFUG Islamabad
+                                </h3>
+                                <p className="text-slate-600 dark:text-slate-400 font-medium">
+                                    Join 3,500+ developers learning AI through real sessions, projects, and community.
+                                </p>
+                            </div>
+                            <div className="flex flex-wrap items-center justify-center gap-4">
+                                <Link 
+                                    href="/contact"
+                                    className="px-6 py-3 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-500/20 flex items-center gap-2"
+                                >
+                                    <Users size={18} /> Join Community
+                                </Link>
+                                <Link 
+                                    href="/sessions"
+                                    className="px-6 py-3 rounded-xl bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 font-bold border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all flex items-center gap-2"
+                                >
+                                    <PlayCircle size={18} /> Explore Sessions
+                                </Link>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+            )}
+
+            <div className="border-t border-slate-100 dark:border-slate-900/50 my-12" />
+
+            {/* LAYER 2 — CLEAN NAV (LINKS) */}
+            <div className="max-w-7xl mx-auto px-6 pb-12">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+                    {/* Brand Column */}
+                    <div className="space-y-6">
+                        <h3 className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 tracking-tighter">
                             TFUG Islamabad
                         </h3>
-                        <p className="text-sm text-slate-600 dark:text-slate-400">
-                            Empowering the AI community in Pakistan through education, collaboration, and innovation.
+                        <p className="text-sm text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
+                            Building Pakistan’s most active AI developer community. An independent group of builders and researchers.
                         </p>
+                        <div className="flex flex-wrap gap-3 pt-2">
+                            <a href="https://www.facebook.com/groups/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 transition-all hover:scale-110" title="Facebook"><Facebook size={20} /></a>
+                            <a href="https://www.instagram.com/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-pink-600 transition-all hover:scale-110" title="Instagram"><Instagram size={20} /></a>
+                            <a href="https://twitter.com/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-all hover:scale-110" title="Twitter"><Twitter size={20} /></a>
+                            <a href="https://www.linkedin.com/company/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-700 transition-all hover:scale-110" title="LinkedIn"><Linkedin size={20} /></a>
+                            <a href="https://discord.gg/hwCx9BaYeC" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-indigo-500 transition-all hover:scale-110" title="Discord"><Discord size={20} /></a>
+                            <a href="https://chat.whatsapp.com/HCAoCKBHahiDvDTklD6Ej6" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-green-500 transition-all hover:scale-110" title="WhatsApp"><WhatsApp size={20} /></a>
+                            <a href="https://www.commudle.com/communities/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-all hover:scale-110 flex items-center -ml-2.5" title="Commudle">
+                                <Image src="/images/Commudle.svg" alt="Commudle" width={80} height={16} className="h-4 w-auto dark:invert mb-0.5" />
+                            </a>
+                        </div>
                     </div>
 
+                    {/* Explore Column */}
                     <div>
-                        <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-4">Programs</h4>
-                        <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                            <li><Link href="/programs/ai-study-jams" className="hover:text-blue-500">AI/ML Study Jams</Link></li>
-                            <li><Link href="/programs/ai-ml-paper-reading-writing" className="hover:text-blue-500">AI/ML Paper Reading & Writing Clubs</Link></li>
-                            <li><Link href="/programs/ai-ml-math-clubs" className="hover:text-blue-500">AI/ML Math Clubs</Link></li>
-                            <li><Link href="/programs/build-with-ai" className="hover:text-blue-500">Build with AI</Link></li>
-                            <li><Link href="/programs/community-talks" className="hover:text-blue-500">Community Talks & Special Sessions</Link></li>
+                        <h4 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-widest mb-6">Explore</h4>
+                        <ul className="space-y-4 text-sm font-medium text-slate-500 dark:text-slate-400">
+                            <li><Link href="/sessions" className="hover:text-blue-600 transition-colors">Sessions</Link></li>
+                            <li><Link href="/articles" className="hover:text-blue-600 transition-colors">Articles</Link></li>
+                            <li><Link href="/speakers" className="hover:text-blue-600 transition-colors">Speakers</Link></li>
+                            <li><Link href="/programs" className="hover:text-blue-600 transition-colors">Programs</Link></li>
                         </ul>
                     </div>
 
+                    {/* Campaigns Column */}
                     <div>
-                        <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-4">Community</h4>
-                        <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                            <li><Link href="/speakers" className="hover:text-blue-500">Speakers</Link></li>
-                            <li><Link href="/blogs" className="hover:text-blue-500">Blogs</Link></li>
-                            <li><Link href="/sessions" className="hover:text-blue-500">Sessions</Link></li>
-                            <li><Link href="/about" className="hover:text-blue-500">About Us</Link></li>
-                            <li><Link href="/contact" className="hover:text-blue-500">Contact</Link></li>
+                        <h4 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-widest mb-6">Campaigns</h4>
+                        <ul className="space-y-4 text-sm font-medium text-slate-500 dark:text-slate-400">
+                            <li><Link href="/sessions?campaign=build-with-ai" className="hover:text-blue-600 transition-colors">Build with AI</Link></li>
+                            <li><Link href="/sessions?campaign=study-jams" className="hover:text-blue-600 transition-colors">AI/ML Study Jams</Link></li>
+                            <li><Link href="/sessions?campaign=paper-reading" className="hover:text-blue-600 transition-colors">AI/ML Paper Reading Clubs</Link></li>
+                            <li><Link href="/sessions?campaign=math-club" className="hover:text-blue-600 transition-colors">AI/ML Math Clubs</Link></li>
                         </ul>
                     </div>
 
+                    {/* Contact Info (Compact) */}
                     <div>
                         <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-4">Connect</h4>
                         <div className="flex flex-wrap gap-4">
@@ -86,8 +149,12 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500">
-                    <p>&copy; {new Date().getFullYear()} TensorFlow User Group Islamabad. An independent community group.</p>
+                {/* LAYER 3 — BRAND BAR (BOTTOM) */}
+                <div className="mt-16 pt-8 border-t border-slate-100 dark:border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
+                    <p>&copy; {new Date().getFullYear()} TFUG Islamabad</p>
+                    <p className="flex items-center gap-2">
+                        An independent community group <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> Islamabad, PK
+                    </p>
                 </div>
             </div>
         </footer>

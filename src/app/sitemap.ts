@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/programs', // Campaigns
         '/speakers',
         '/sessions',
-        '/blogs',
+        '/articles',
         '/about',
         '/contact',
     ].map((route) => ({

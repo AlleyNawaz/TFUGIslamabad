@@ -2,6 +2,13 @@ import { Program } from "@/types";
 
 export const programs: Program[] = [
     {
+        id: "build-with-ai",
+        title: "Build with AI",
+        slug: "build-with-ai",
+        description: "Practical sessions on building real-world AI systems using modern tools and frameworks.",
+        color: "bg-green-500",
+    },
+    {
         id: "study-jams",
         title: "AI/ML Study Jams",
         slug: "ai-study-jams",
@@ -10,7 +17,7 @@ export const programs: Program[] = [
     },
     {
         id: "paper-reading",
-        title: "AI/ML Paper Reading and Writing Clubs",
+        title: "AI/ML Paper Reading Clubs",
         slug: "ai-ml-paper-reading-writing",
         description: "Research-focused sessions on reading, understanding, and writing ML & AI papers.",
         color: "bg-red-500",
@@ -21,13 +28,6 @@ export const programs: Program[] = [
         slug: "ai-ml-math-clubs",
         description: "Deep dives into the mathematical foundations behind machine learning and AI.",
         color: "bg-yellow-500",
-    },
-    {
-        id: "build-with-ai",
-        title: "Build with AI",
-        slug: "build-with-ai",
-        description: "Practical sessions on building real-world AI systems using modern tools and frameworks.",
-        color: "bg-green-500",
     },
     {
         id: "community-talks",

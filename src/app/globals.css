@@ -16,6 +16,19 @@
   100% { transform: translateX(-50%); }
 }
 
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@layer utilities {
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientMove 6s ease infinite;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,14 +36,19 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #020617;
     --foreground: #ededed;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+}
+
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
 }
 

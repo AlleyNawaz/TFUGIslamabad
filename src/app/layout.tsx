@@ -44,6 +44,7 @@ const jsonLd = {
 };
 
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import { GlobalBackground } from "@/components/layout/GlobalBackground";
 
 export default function RootLayout({
   children,
@@ -76,7 +77,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={cn(inter.className, "min-h-screen flex flex-col bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 antialiased")}>
+      <body className={cn(inter.className, "min-h-screen flex flex-col bg-transparent text-slate-900 dark:text-slate-50 antialiased relative")}>
+        <GlobalBackground />
         <ThemeProvider>
           <Navbar />
           <main className="flex-grow pt-16">
