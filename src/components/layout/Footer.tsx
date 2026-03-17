@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Twitter, Linkedin, Mail, Facebook, Instagram } from "lucide-react";
 
 const Discord = ({ size = 24, className = "" }: { size?: number, className?: string }) => (
@@ -76,7 +77,7 @@ export function Footer() {
                             <a href="https://www.instagram.com/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-pink-600 transition-colors" title="Instagram" aria-label="TFUG Islamabad Instagram"><Instagram size={20} /></a>
                             <a href="https://discord.gg/hwCx9BaYeC" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-indigo-500 transition-colors" title="Discord" aria-label="TFUG Islamabad Discord"><Discord size={20} /></a>
                             <a href="https://chat.whatsapp.com/HCAoCKBHahiDvDTklD6Ej6" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-green-500 transition-colors" title="WhatsApp" aria-label="TFUG Islamabad WhatsApp"><WhatsApp size={20} /></a>
-                            <a href="https://www.commudle.com/communities/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="transition-opacity hover:opacity-80 text-slate-500" title="Commudle" aria-label="TFUG Islamabad Commudle Community"><img src="/images/Commudle.svg" alt="Commudle" className="h-5 w-auto" /></a>
+                            <a href="https://www.commudle.com/communities/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="transition-opacity hover:opacity-80 text-slate-500" title="Commudle" aria-label="TFUG Islamabad Commudle Community"><Image src="/images/Commudle.svg" alt="Commudle" width={80} height={20} className="h-5 w-auto" /></a>
                         </div>
                         <div className="mt-4 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
                             <Mail size={16} />

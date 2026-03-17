@@ -323,7 +323,7 @@ export function SessionsView() {
                         <Search className="mx-auto text-slate-300 dark:text-slate-600 mb-4" size={48} />
                         <h3 className="text-xl font-bold text-slate-700 dark:text-slate-300 mb-2">No videos found</h3>
                         <p className="text-slate-500 mb-6 max-w-sm mx-auto">
-                            We couldn't find any sessions matching your current filters. Try selecting a different category or clearing your search.
+                            We couldn&apos;t find any sessions matching your current filters. Try selecting a different category or clearing your search.
                         </p>
                         <button 
                             onClick={() => { setCategory("all"); setSpeakerType("all"); setSortBy("newest"); setSearchQuery(""); }}
