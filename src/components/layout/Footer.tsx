@@ -90,33 +90,19 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     {/* Brand Column */}
                     <div className="space-y-6">
-                        <Link href="/" className="block w-fit">
-                            <div className="relative w-12 h-12 mb-2 transition-transform duration-300 hover:scale-110">
+                        <Link href="/" className="block w-fit mx-auto flex flex-col items-center">
+                            <div className="relative w-40 h-10 mb-2 transition-transform duration-300 hover:scale-105">
                                 <Image 
                                     src={tfugLogo} 
                                     alt="TFUG Islamabad Logo" 
                                     fill
-                                    className="object-contain dark:brightness-110"
+                                    className="object-contain transition-all"
                                 />
                             </div>
-                            <h3 className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 tracking-tighter">
-                                TFUG Islamabad
-                            </h3>
                         </Link>
-                        <p className="text-sm text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
+                        <p className="text-sm text-slate-600 dark:text-slate-400 font-medium leading-relaxed text-center">
                             Building Pakistan’s most active AI developer community. An independent group of builders and researchers.
                         </p>
-                        <div className="flex flex-wrap gap-3 pt-2">
-                            <a href="https://www.facebook.com/groups/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 transition-all hover:scale-110" title="Facebook"><Facebook size={20} /></a>
-                            <a href="https://www.instagram.com/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-pink-600 transition-all hover:scale-110" title="Instagram"><Instagram size={20} /></a>
-                            <a href="https://twitter.com/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-all hover:scale-110" title="Twitter"><Twitter size={20} /></a>
-                            <a href="https://www.linkedin.com/company/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-700 transition-all hover:scale-110" title="LinkedIn"><Linkedin size={20} /></a>
-                            <a href="https://discord.gg/hwCx9BaYeC" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-indigo-500 transition-all hover:scale-110" title="Discord"><Discord size={20} /></a>
-                            <a href="https://chat.whatsapp.com/HCAoCKBHahiDvDTklD6Ej6" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-green-500 transition-all hover:scale-110" title="WhatsApp"><WhatsApp size={20} /></a>
-                            <a href="https://www.commudle.com/communities/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-all hover:scale-110 flex items-center -ml-2.5" title="Commudle">
-                                <Image src="/images/Commudle.svg" alt="Commudle" width={80} height={16} className="h-4 w-auto dark:invert mb-0.5" />
-                            </a>
-                        </div>
                     </div>
 
                     {/* Explore Column */}
@@ -143,26 +129,30 @@ export function Footer() {
 
                     {/* Contact Info (Compact) */}
                     <div>
-                        <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-4">Connect</h4>
-                        <div className="flex flex-wrap gap-4">
-                            <a href="https://twitter.com/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-500 transition-colors" title="Twitter" aria-label="TFUG Islamabad Twitter"><Twitter size={20} /></a>
-                            <a href="https://www.linkedin.com/company/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-700 transition-colors" title="LinkedIn" aria-label="TFUG Islamabad LinkedIn"><Linkedin size={20} /></a>
-                            <a href="https://www.facebook.com/groups/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-600 transition-colors" title="Facebook" aria-label="TFUG Islamabad Facebook"><Facebook size={20} /></a>
-                            <a href="https://www.instagram.com/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-pink-600 transition-colors" title="Instagram" aria-label="TFUG Islamabad Instagram"><Instagram size={20} /></a>
-                            <a href="https://discord.gg/hwCx9BaYeC" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-indigo-500 transition-colors" title="Discord" aria-label="TFUG Islamabad Discord"><Discord size={20} /></a>
-                            <a href="https://chat.whatsapp.com/HCAoCKBHahiDvDTklD6Ej6" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-green-500 transition-colors" title="WhatsApp" aria-label="TFUG Islamabad WhatsApp"><WhatsApp size={20} /></a>
-                            <a href="https://www.commudle.com/communities/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="transition-opacity hover:opacity-80 text-slate-500" title="Commudle" aria-label="TFUG Islamabad Commudle Community"><Image src="/images/Commudle.svg" alt="Commudle" width={80} height={20} className="h-5 w-auto" /></a>
+                        <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-4 text-center md:text-left">Connect</h4>
+                        <div className="flex items-center justify-center md:justify-start gap-4 mb-4 flex-nowrap">
+                            <a href="https://www.facebook.com/groups/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 transition-all hover:scale-110" title="Facebook"><Facebook size={20} /></a>
+                            <a href="https://www.instagram.com/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-pink-600 transition-all hover:scale-110" title="Instagram"><Instagram size={20} /></a>
+                            <a href="https://twitter.com/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-all hover:scale-110" title="Twitter"><Twitter size={20} /></a>
+                            <a href="https://www.linkedin.com/company/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-700 transition-all hover:scale-110" title="LinkedIn"><Linkedin size={20} /></a>
+                            <a href="https://discord.gg/hwCx9BaYeC" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-indigo-500 transition-all hover:scale-110" title="Discord"><Discord size={20} /></a>
+                            <a href="https://chat.whatsapp.com/HCAoCKBHahiDvDTklD6Ej6" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-green-500 transition-all hover:scale-110" title="WhatsApp"><WhatsApp size={20} /></a>
+                            <a href="https://www.commudle.com/communities/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-all hover:scale-110 flex items-center" title="Commudle">
+                                <Image src="/images/Commudle.svg" alt="Commudle" width={32} height={20} className="h-5 w-auto dark:invert" />
+                            </a>
                         </div>
-                        <div className="mt-4 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
-                            <Mail size={16} />
-                            <a href="mailto:TFUGIslamabad@gmail.com" className="hover:text-blue-500">TFUGIslamabad@gmail.com</a>
+                        <div className="flex flex-col items-center md:items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
+                            <div className="flex items-center gap-2">
+                                <Mail size={16} />
+                                <a href="mailto:TFUGIslamabad@gmail.com" className="hover:text-blue-500">TFUGIslamabad@gmail.com</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 {/* LAYER 3 — BRAND BAR (BOTTOM) */}
                 <div className="mt-16 pt-8 border-t border-slate-100 dark:border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
-                    <p>&copy; {new Date().getFullYear()} TFUG Islamabad</p>
+                    <p>&copy; {new Date().getFullYear()} TensorFlow User Group Islamabad</p>
                     <p className="flex items-center gap-2">
                         An independent community group <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> Islamabad, PK
                     </p>

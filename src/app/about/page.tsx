@@ -175,8 +175,8 @@ export default function AboutPage() {
                             ))}
                         </div>
                     </div>
-                    <div className="relative p-1 bg-gradient-to-tr from-blue-500 to-indigo-700 rounded-3xl overflow-hidden shadow-2xl group transition-all duration-500 hover:shadow-blue-500/10 hover:-translate-y-1">
-                        <div className="bg-slate-900 rounded-[1.4rem] p-8 md:p-12 aspect-video flex flex-col justify-center overflow-hidden relative">
+                    <div className="relative p-1 bg-gradient-to-tr from-blue-500 to-indigo-700 rounded-3xl shadow-2xl group transition-all duration-500 hover:shadow-blue-500/10 hover:-translate-y-1">
+                        <div className="bg-slate-900 rounded-[1.4rem] p-8 md:p-12 min-h-[320px] md:aspect-video flex flex-col justify-center relative">
                              {/* Subtle Background Watermark */}
                              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center select-none pointer-events-none uppercase tracking-tighter leading-[0.8]">
                                 <span className="text-[70px] md:text-[90px] font-black text-white/5">TensorFlow</span>

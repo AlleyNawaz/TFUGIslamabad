@@ -39,13 +39,13 @@ export function Navbar() {
                     }`}
             >
                 {/* Logo Section */}
-                <Link href="/" className="flex items-center gap-3 shrink-0 group">
-                    <div className="relative w-9 h-9 sm:w-10 sm:h-10 transition-transform duration-300 group-hover:scale-110">
+                <Link href="/" className="flex items-center gap-3 shrink-0 group ml-6">
+                    <div className="relative w-32 h-8 sm:w-40 sm:h-10 transition-transform duration-300 group-hover:scale-105">
                         <Image 
                             src={tfugLogo} 
                             alt="TFUG Islamabad" 
                             fill
-                            className="object-contain"
+                            className="object-contain transition-all"
                             priority
                         />
                     </div>
