@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { SpeakersView } from "@/components/views/SpeakersView";
 import { gdes, googleSpeakers, industryExperts } from "@/data/speakers";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
     title: "Community Speakers & Experts",
@@ -51,7 +52,9 @@ export default function SpeakersPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <SpeakersView />
+            <Suspense fallback={null}>
+                <SpeakersView />
+            </Suspense>
         </>
     );
 }
