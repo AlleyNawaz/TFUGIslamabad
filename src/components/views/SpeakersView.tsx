@@ -36,13 +36,28 @@ function EliteGridCard({ speaker, onClick }: { speaker: Speaker; onClick: () => 
                 />
             </motion.div>
 
-            {/* Name */}
-            <h3 className="mt-2 text-lg font-semibold text-slate-900 dark:text-white mb-1 relative z-10 tracking-tight transition-colors duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:text-blue-600 dark:group-hover:text-blue-400">
-                {speaker.name}
-            </h3>
+            {/* Name & LinkedIn */}
+            <div className="relative z-10 flex flex-col items-center gap-1 group/name">
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-white tracking-tight transition-colors duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                    {speaker.name}
+                </h3>
+                
+                {speaker.socials?.linkedin && (
+                    <a 
+                        href={speaker.socials.linkedin} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex items-center gap-1 text-[10px] font-bold text-slate-400 hover:text-[#0A66C2] transition-colors uppercase tracking-widest"
+                    >
+                        <Linkedin size={12} fill="currentColor" className="opacity-70 group-hover/name:opacity-100 transition-opacity" />
+                        Connect
+                    </a>
+                )}
+            </div>
 
             {/* Role */}
-            <p className="text-xs font-medium text-slate-500 dark:text-slate-400 tracking-wide relative z-10">
+            <p className="mt-2 text-xs font-medium text-slate-500 dark:text-slate-400 tracking-wide relative z-10">
                 {speaker.role}
             </p>
 
@@ -155,7 +170,7 @@ function SpeakerModal({ speaker, onClose }: { speaker: Speaker | null; onClose: 
                             }
                         }}
                         onMouseMove={handleMouseMove}
-                        className="relative w-full max-w-3xl bg-white dark:bg-slate-900 rounded-t-[2.5rem] shadow-2xl ring-1 ring-slate-900/5 dark:ring-white/10 overflow-hidden flex flex-col max-h-[92vh] mt-12 will-change-transform translate-z-0"
+                        className="relative w-full max-w-2xl bg-white dark:bg-slate-900 rounded-t-[2rem] md:rounded-[2.5rem] shadow-2xl ring-1 ring-slate-900/5 dark:ring-white/10 overflow-hidden flex flex-col max-h-[90vh] md:max-h-[92vh] will-change-transform translate-z-0"
                         layoutId={speaker ? `speaker-card-${speaker.id}` : undefined}
                     >
                         {/* Spotlight Glare */}
@@ -172,7 +187,7 @@ function SpeakerModal({ speaker, onClose }: { speaker: Speaker | null; onClose: 
                             <X size={20} />
                         </button>
 
-                        {/* Parallax Image Header Container - Fixed to proper object-contain */}
+                        {/* Parallax Image Header Container - Fixed to proper object-contain as per visual feedback */}
                         <div className="relative flex items-center justify-center h-[280px] sm:h-[360px] w-full shrink-0 overflow-hidden bg-gradient-to-b from-slate-100 to-white dark:from-slate-800 dark:to-slate-900 text-center">
                             {/* The Image inside moves via Parallax */}
                             <motion.div 
@@ -195,15 +210,28 @@ function SpeakerModal({ speaker, onClose }: { speaker: Speaker | null; onClose: 
                             <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent dark:from-slate-900 pointer-events-none" />
 
                             {/* Header Content Overlaying Image */}
-                            <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-10 sm:right-10 flex items-end justify-between z-10 pointer-events-none">
-                                <div className="max-w-[80%] text-left">
+                            <div className="absolute bottom-4 left-6 right-6 sm:bottom-6 sm:left-10 sm:right-10 flex items-end justify-between z-10 pointer-events-none">
+                                <div className="flex-1 text-left">
                                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tighter mb-1 drop-shadow-sm">
                                         {speaker.name}
                                     </h2>
-                                    <p className="text-lg sm:text-xl font-bold text-blue-600 dark:text-blue-400 drop-shadow-sm">
-                                        {speaker.role} {speaker.company && <span className="opacity-80">@ {speaker.company}</span>}
+                                    <p className="text-lg sm:text-xl font-bold text-blue-600 dark:text-blue-400 drop-shadow-sm flex flex-wrap items-center gap-x-2">
+                                        <span>{speaker.role}</span>
+                                        {speaker.company && <span className="opacity-80 whitespace-nowrap">@ {speaker.company}</span>}
                                     </p>
                                 </div>
+                                
+                                {speaker.socials?.linkedin && (
+                                    <a 
+                                        href={speaker.socials.linkedin} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="pointer-events-auto shrink-0 w-12 h-12 rounded-2xl bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center text-[#0A66C2] dark:text-blue-400 hover:scale-110 active:scale-95 transition-all mb-1"
+                                        title="Connect on LinkedIn"
+                                    >
+                                        <Linkedin size={24} fill="currentColor" />
+                                    </a>
+                                )}
                             </div>
                         </div>
 

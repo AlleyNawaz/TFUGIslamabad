@@ -55,7 +55,7 @@ export function Hero() {
     ];
 
     return (
-        <section className="relative overflow-hidden pt-36 pb-20 lg:pt-48 lg:pb-32 min-h-[95vh] flex items-center">
+        <section className="relative overflow-hidden pt-24 pb-12 lg:pt-48 lg:pb-32 min-h-fit flex items-center">
             {/* Background Mesh Gradients */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 <div className="absolute top-1/4 -right-1/4 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-[140px] animate-pulse" />
@@ -71,9 +71,9 @@ export function Hero() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                         >
-                            <h1 className="text-5xl sm:text-6xl lg:text-[5.5rem] font-black tracking-tight text-slate-900 dark:text-white leading-[1.05]">
-                                Pakistan’s Fastest <br/>
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 inline-block mt-3 animate-gradient">Growing AI Community</span>
+                            <h1 className="text-4xl sm:text-6xl lg:text-[5.5rem] font-black tracking-tighter text-slate-900 dark:text-white leading-[1.1] md:leading-[1.05]">
+                                Pakistan’s Fastest <br className="hidden sm:block" />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 inline-block mt-2 animate-gradient">Growing AI Community</span>
                             </h1>
                         </motion.div>
 
@@ -90,16 +90,16 @@ export function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                            className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto"
+                            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
                         >
                             <Link href="/sessions" className="w-full sm:w-auto">
-                                <Button size="lg" className="w-full sm:w-auto gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-2xl shadow-blue-500/25 hover:scale-105 active:scale-95 transition-all duration-300 font-bold h-16 px-10 rounded-[2rem] text-lg">
+                                <Button size="lg" className="w-full sm:w-auto gap-3 bg-blue-600 text-white shadow-xl shadow-blue-500/20 active:scale-95 transition-all duration-300 font-bold h-14 md:h-16 px-8 md:px-10 rounded-2xl md:rounded-[2rem] text-base md:text-lg">
                                     Explore Sessions
-                                    <ArrowRight size={22} />
+                                    <ArrowRight size={20} />
                                 </Button>
                             </Link>
                             <Link href="/programs" className="w-full sm:w-auto">
-                                <Button variant="ghost" size="lg" className="w-full sm:w-auto gap-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100/80 dark:hover:bg-slate-800/50 transition-all font-bold h-16 px-10 rounded-[2rem] text-lg border border-slate-200/50 dark:border-slate-700/50">
+                                <Button variant="ghost" size="lg" className="w-full sm:w-auto gap-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100/80 dark:hover:bg-slate-800/50 transition-all font-bold h-14 md:h-16 px-8 md:px-10 rounded-2xl md:rounded-[2rem] text-base md:text-lg border border-slate-200/50 dark:border-slate-700/50">
                                     View Programs
                                 </Button>
                             </Link>

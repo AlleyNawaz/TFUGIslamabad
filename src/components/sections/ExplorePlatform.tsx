@@ -33,8 +33,8 @@ const platformCards = [
 
 export function ExplorePlatform() {
     return (
-        <section className="relative py-20 overflow-hidden z-10">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative py-16 overflow-hidden z-10 px-5">
+            <div className="max-w-7xl mx-auto">
                 <div className="mb-12">
                     <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight">
                         Start Your AI Journey
@@ -52,7 +52,7 @@ export function ExplorePlatform() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                                className={`relative h-full flex flex-col p-6 rounded-2xl bg-white/50 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-black/50 ${card.borderColor} overflow-hidden`}
+                                className={`relative h-auto min-h-fit flex flex-col p-6 rounded-2xl bg-white/50 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-black/50 ${card.borderColor} overflow-hidden`}
                             >
                                 {/* Subtle background gradient on hover */}
                                 <div className={`absolute inset-0 bg-gradient-to-br ${card.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`} />

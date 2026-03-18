@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import tfugLogo from "@/images/tfuglogo.png";
 import { Twitter, Linkedin, Mail, Facebook, Instagram, PlayCircle, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -89,9 +90,19 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     {/* Brand Column */}
                     <div className="space-y-6">
-                        <h3 className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 tracking-tighter">
-                            TFUG Islamabad
-                        </h3>
+                        <Link href="/" className="block w-fit">
+                            <div className="relative w-12 h-12 mb-2 transition-transform duration-300 hover:scale-110">
+                                <Image 
+                                    src={tfugLogo} 
+                                    alt="TFUG Islamabad Logo" 
+                                    fill
+                                    className="object-contain dark:brightness-110"
+                                />
+                            </div>
+                            <h3 className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 tracking-tighter">
+                                TFUG Islamabad
+                            </h3>
+                        </Link>
                         <p className="text-sm text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
                             Building Pakistan’s most active AI developer community. An independent group of builders and researchers.
                         </p>

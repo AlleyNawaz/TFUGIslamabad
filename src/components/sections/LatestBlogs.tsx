@@ -22,8 +22,8 @@ export function LatestBlogs() {
     }
 
     return (
-        <section className="py-24 relative z-10">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 relative z-10 px-5">
+            <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
                     <div className="max-w-2xl text-left">
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">
