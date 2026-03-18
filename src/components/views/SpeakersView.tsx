@@ -226,7 +226,7 @@ function SpeakerModal({ speaker, onClose }: { speaker: Speaker | null; onClose: 
                                         href={speaker.socials.linkedin} 
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="pointer-events-auto shrink-0 w-12 h-12 rounded-2xl bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center text-[#0A66C2] dark:text-blue-400 hover:scale-110 active:scale-95 transition-all mb-1"
+                                        className="sm:hidden pointer-events-auto shrink-0 w-12 h-12 rounded-2xl bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center text-[#0A66C2] dark:text-blue-400 hover:scale-110 active:scale-95 transition-all mb-1"
                                         title="Connect on LinkedIn"
                                     >
                                         <Linkedin size={24} fill="currentColor" />
@@ -283,8 +283,8 @@ function SpeakerModal({ speaker, onClose }: { speaker: Speaker | null; onClose: 
                                     </motion.div>
                                 </div>
 
-                                {/* Right Column: Social Links Sidebar */}
-                                <motion.div initial={{opacity: 0, x: 20}} animate={{opacity: 1, x: 0}} transition={{delay: 0.3, duration: 0.5}} className="sm:w-32 lg:w-40 shrink-0 relative z-10">
+                                {/* Right Column: Social Links Sidebar (Visible only on desktop) */}
+                                <motion.div initial={{opacity: 0, x: 20}} animate={{opacity: 1, x: 0}} transition={{delay: 0.3, duration: 0.5}} className="hidden sm:flex sm:flex-col sm:w-32 lg:w-40 shrink-0 relative z-10">
                                     <h4 className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4 hidden sm:flex items-center gap-2">
                                         <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                                         Connect
