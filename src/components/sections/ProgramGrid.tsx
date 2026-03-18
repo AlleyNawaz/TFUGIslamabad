@@ -66,7 +66,7 @@ export function ProgramGrid() {
     ];
 
     return (
-        <section className="py-16 relative z-10 overflow-x-hidden bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900 px-5">
+        <section id="programs" className="py-16 relative z-10 overflow-x-hidden bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900 px-5 scroll-mt-24">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-20">
                     <motion.h2 

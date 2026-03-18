@@ -130,7 +130,7 @@ export function Footer() {
                     {/* Contact Info (Compact) */}
                     <div>
                         <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-4 text-center md:text-left">Connect</h4>
-                        <div className="flex items-center justify-center md:justify-start gap-4 mb-4 flex-nowrap">
+                        <div className="flex items-center justify-center md:justify-start gap-2.5 mb-4 flex-nowrap">
                             <a href="https://www.facebook.com/groups/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 transition-all hover:scale-110" title="Facebook"><Facebook size={20} /></a>
                             <a href="https://www.instagram.com/TFUGIsl" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-pink-600 transition-all hover:scale-110" title="Instagram"><Instagram size={20} /></a>
                             <a href="https://twitter.com/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-all hover:scale-110" title="Twitter"><Twitter size={20} /></a>
@@ -138,7 +138,7 @@ export function Footer() {
                             <a href="https://discord.gg/hwCx9BaYeC" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-indigo-500 transition-all hover:scale-110" title="Discord"><Discord size={20} /></a>
                             <a href="https://chat.whatsapp.com/HCAoCKBHahiDvDTklD6Ej6" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-green-500 transition-all hover:scale-110" title="WhatsApp"><WhatsApp size={20} /></a>
                             <a href="https://www.commudle.com/communities/TFUGIslamabad" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-all hover:scale-110 flex items-center" title="Commudle">
-                                <Image src="/images/Commudle.svg" alt="Commudle" width={32} height={20} className="h-5 w-auto dark:invert" />
+                                <Image src="/images/Commudle.svg" alt="Commudle" width={32} height={20} className="h-[22px] w-auto dark:invert" />
                             </a>
                         </div>
                         <div className="flex flex-col items-center md:items-start gap-2 text-sm text-slate-600 dark:text-slate-400">

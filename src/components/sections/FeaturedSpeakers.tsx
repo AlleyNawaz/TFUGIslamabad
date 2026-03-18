@@ -27,8 +27,9 @@ export function FeaturedSpeakers() {
                     <div className="flex w-max animate-marquee hover:cursor-grab active:cursor-grabbing">
                         {/* Render list twice for seamless loop */}
                         {[...allSpeakers, ...allSpeakers].map((speaker, index) => (
-                            <div
+                            <Link
                                 key={`${speaker.id}-${index}`}
+                                href={`/speakers?id=${speaker.id}`}
                                 className="flex-shrink-0 w-64 mx-4 md:mx-6 text-center group"
                             >
                                 <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-slate-100 dark:border-slate-800 group-hover:border-blue-500 transition-colors duration-300">
@@ -54,29 +55,31 @@ export function FeaturedSpeakers() {
                                 <div className="flex justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10">
                                     {/* Only show icons if links exist */}
                                     {speaker.socials?.twitter && (
-                                        <a
-                                            href={speaker.socials.twitter}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
+                                        <span
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                e.stopPropagation();
+                                                window.open(speaker.socials!.twitter!, '_blank');
+                                            }}
                                             className="text-slate-400 hover:text-blue-400 cursor-pointer pointer-events-auto"
-                                            onClick={(e) => e.stopPropagation()}
                                         >
                                             <Twitter size={16} />
-                                        </a>
+                                        </span>
                                     )}
                                     {speaker.socials?.linkedin && (
-                                        <a
-                                            href={speaker.socials.linkedin}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
+                                        <span
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                e.stopPropagation();
+                                                window.open(speaker.socials!.linkedin!, '_blank');
+                                            }}
                                             className="text-slate-400 hover:text-blue-700 cursor-pointer pointer-events-auto"
-                                            onClick={(e) => e.stopPropagation()}
                                         >
                                             <Linkedin size={16} />
-                                        </a>
+                                        </span>
                                     )}
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

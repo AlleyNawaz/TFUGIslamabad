@@ -98,11 +98,20 @@ export function Hero() {
                                     <ArrowRight size={20} />
                                 </Button>
                             </Link>
-                            <Link href="/programs" className="w-full sm:w-auto">
-                                <Button variant="ghost" size="lg" className="w-full sm:w-auto gap-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100/80 dark:hover:bg-slate-800/50 transition-all font-bold h-14 md:h-16 px-8 md:px-10 rounded-2xl md:rounded-[2rem] text-base md:text-lg border border-slate-200/50 dark:border-slate-700/50">
-                                    View Programs
-                                </Button>
-                            </Link>
+                            <Button
+                                variant="ghost"
+                                size="lg"
+                                onClick={() => {
+                                    const section = document.getElementById('programs');
+                                    if (!section) return;
+                                    const yOffset = -100;
+                                    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                    window.scrollTo({ top: y, behavior: 'smooth' });
+                                }}
+                                className="w-full sm:w-auto gap-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100/80 dark:hover:bg-slate-800/50 transition-all font-bold h-14 md:h-16 px-8 md:px-10 rounded-2xl md:rounded-[2rem] text-base md:text-lg border border-slate-200/50 dark:border-slate-700/50 active:scale-[0.97] hover:-translate-y-[1px]"
+                            >
+                                View Programs
+                            </Button>
                         </motion.div>
                     </div>
 

@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Linkedin, Twitter, ArrowRight, Mic, CheckCircle2, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { useSearchParams } from "next/navigation";
 
 const FILTERS = ["All", "Googlers", "GDEs", "Community"];
 
@@ -323,11 +324,24 @@ function SpeakerModal({ speaker, onClose }: { speaker: Speaker | null; onClose: 
 export function SpeakersView() {
     const [filter, setFilter] = useState("All");
     const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
+    const searchParams = useSearchParams();
 
     const allSpeakers = [...googleSpeakers, ...gdes, ...industryExperts];
 
     // Create unique list for the filter, to remove duplicates if any speaker appears in multiple lists
     const uniqueSpeakers = Array.from(new Set(allSpeakers));
+
+    // Auto-open speaker modal if ?id= is in the URL (from homepage click)
+    useEffect(() => {
+        const speakerId = searchParams.get('id');
+        if (speakerId) {
+            const all = [...googleSpeakers, ...gdes, ...industryExperts];
+            const speaker = all.find(s => s.id === speakerId);
+            if (speaker) {
+                setSelectedSpeaker(speaker);
+            }
+        }
+    }, [searchParams]);
 
     const filteredSpeakers = uniqueSpeakers.filter(s => {
         if (filter === "All") return true;
