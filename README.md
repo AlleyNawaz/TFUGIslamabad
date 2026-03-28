@@ -1,23 +1,21 @@
-# TFUG Islamabad
-
 Welcome to the official repository for **TensorFlow User Group (TFUG) Islamabad**, a community-led hub for mastering Machine Learning and AI. 
 
 Our platform connects enthusiasts and professionals through AI study jams, paper reading clubs, hands-on workshops, and community events.
 
-![TFUG Islamabad](https://www.tfugislamabad.tech//og-image.jpg) <!-- Replace with actual image if exists -->
+![TFUG Islamabad](https://www.tfugislamabad.tech/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftfuglogo.3034d445.png&w=3840&q=75) <!-- Replace with actual image if exists -->
 
-🌐 **Live Website:** [tfugislamabad.tech](https://www.tfugislamabad.tech)
+**Live Website:** [tfugislamabad.tech](https://www.tfugislamabad.tech)
 
 ---
 
-## 🌟 Features
+## Features
 
 - **Community Hub:** Engage with local AI experts, speakers, and machine learning enthusiasts.
 - **Programs & Events:** Updates on study jams, hands-on ML workshops, and academic paper reading clubs.
 - **Modern UI:** A stunning, fully responsive interface optimized with light and dark mode support.
 - **Dynamic Content:** Browse featured speakers, recent blog posts, and explore various platform offerings.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 This project is built with a modern, performant web stack:
 
@@ -28,7 +26,7 @@ This project is built with a modern, performant web stack:
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
 
-## 🛠️ Getting Started
+## Getting Started
 
 To run the project locally on your machine, follow these steps:
 
@@ -68,7 +66,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `src/lib`: Utility functions and helper classes.
 - `public`: Static assets, images, and fonts.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -78,7 +76,7 @@ Contributions are what make the open source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 🌐 Community Links
+## Community Links
 
 Stay connected with TFUG Islamabad:
 - [Twitter / X](https://twitter.com/TFUGIslamabad)
