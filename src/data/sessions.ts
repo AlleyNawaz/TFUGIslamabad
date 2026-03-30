@@ -116,7 +116,7 @@ export const sessions: VideoSession[] = [
         programId: "study-jams",
         date: "2024-07-13",
         duration: "40:00",
-        views: 88,
+        views: 89,
         tags: ["Prompt Engineering", "Context", "LLM"]
     },
     {
@@ -220,7 +220,7 @@ export const sessions: VideoSession[] = [
         programId: "study-jams",
         date: "2025-08-31",
         duration: "55:00",
-        views: 87,
+        views: 88,
         tags: ["ADK", "Vertex AI", "Agents"]
     },
     {
@@ -233,7 +233,7 @@ export const sessions: VideoSession[] = [
         programId: "study-jams",
         date: "2025-12-21",
         duration: "1:05:00",
-        views: 114,
+        views: 116,
         tags: ["ADK", "AntiGravity", "Real-Time"]
     },
     {
@@ -246,7 +246,7 @@ export const sessions: VideoSession[] = [
         programId: "study-jams",
         date: "2026-03-15",
         duration: "1:11:04",
-        views: 10,
+        views: 29,
         tags: ["Attention Mechanisms", "AI Systems", "LLM"]
     },
     // New AI/ML Paper Reading and Writing Clubs Sessions
@@ -273,7 +273,7 @@ export const sessions: VideoSession[] = [
         programId: "paper-reading",
         date: "2024-07-28",
         duration: "1:15:00",
-        views: 332,
+        views: 336,
         tags: ["Transformer", "Attention", "NLP"]
     },
     {
@@ -286,7 +286,7 @@ export const sessions: VideoSession[] = [
         programId: "paper-reading",
         date: "2024-09-28",
         duration: "1:00:00",
-        views: 176,
+        views: 178,
         tags: ["Research", "Writing", "Publication"]
     },
     {
@@ -299,7 +299,7 @@ export const sessions: VideoSession[] = [
         programId: "paper-reading",
         date: "2025-05-25",
         duration: "55:00",
-        views: 168,
+        views: 173,
         tags: ["Recommender Systems", "Multimodal", "LLM"]
     },
     {
@@ -364,7 +364,7 @@ export const sessions: VideoSession[] = [
         programId: "paper-reading",
         date: "2026-03-01",
         duration: "22:08",
-        views: 32,
+        views: 36,
         tags: ["GenAI", "GenXAI", "Explainable AI"]
     },
     // New AI/ML Math Clubs Sessions
@@ -378,7 +378,7 @@ export const sessions: VideoSession[] = [
         programId: "math-club",
         date: "2024-06-30",
         duration: "44:51",
-        views: 57,
+        views: 59,
         tags: ["Statistics", "Probability", "Math"]
     },
     {
@@ -391,7 +391,7 @@ export const sessions: VideoSession[] = [
         programId: "math-club",
         date: "2024-12-29",
         duration: "36:16",
-        views: 66,
+        views: 67,
         tags: ["Optimization", "Gradient Descent", "Math"]
     },
     {
@@ -404,7 +404,7 @@ export const sessions: VideoSession[] = [
         programId: "math-club",
         date: "2025-06-21",
         duration: "27:24",
-        views: 184,
+        views: 185,
         tags: ["Self-Attention", "Transformers", "Math"]
     },
     // New Build with AI Sessions
@@ -418,7 +418,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2025-05-03",
         duration: "37:09",
-        views: 171,
+        views: 172,
         tags: ["Vision Transformers", "CNN", "Computer Vision"]
     },
     {
@@ -509,7 +509,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-02-21",
         duration: "2:57:25",
-        views: 177,
+        views: 185,
         tags: ["Gemini 3", "ADK", "Agents"]
     },
     {
@@ -522,7 +522,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-02-22",
         duration: "1:01:00",
-        views: 75,
+        views: 86,
         tags: ["Gemini", "CLI", "Skills"]
     },
     {
@@ -535,7 +535,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-02-28",
         duration: "47:44",
-        views: 58,
+        views: 65,
         tags: ["Android Studio", "VSCode", "Offline AI"]
     },
     {
@@ -548,7 +548,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-03-06",
         duration: "51:43",
-        views: 62,
+        views: 69,
         tags: ["Google AI Studio", "Prompting"]
     },
     {
@@ -561,7 +561,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-03-07",
         duration: "44:06",
-        views: 59,
+        views: 69,
         tags: ["Gemma 3", "Multimodal", "Agents"]
     },
     {
@@ -574,7 +574,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-03-14",
         duration: "1:36:06",
-        views: 10,
+        views: 46,
         tags: ["Google Cloud", "Okta", "Security"]
     },
     // New Community Talks & Special Sessions
@@ -653,7 +653,7 @@ export const sessions: VideoSession[] = [
         programId: "community-talks",
         date: "2024-08-16",
         duration: "55:06",
-        views: 69,
+        views: 71,
         tags: ["Career", "Google", "Interview"]
     },
     {
@@ -679,7 +679,7 @@ export const sessions: VideoSession[] = [
         programId: "community-talks",
         date: "2025-08-02",
         duration: "25:59",
-        views: 128,
+        views: 129,
         tags: ["Angular", "Performance", "Web"]
     },
 ];
