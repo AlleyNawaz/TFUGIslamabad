@@ -38,6 +38,7 @@ export function FeaturedSpeakers() {
                                         alt={speaker.name}
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                        style={{ objectPosition: speaker.objectPosition || 'center' }}
                                     />
                                 </div>
                                 <h3 className="text-lg font-bold text-slate-900 dark:text-white truncate px-2">

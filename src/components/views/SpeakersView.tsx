@@ -34,6 +34,7 @@ function EliteGridCard({ speaker, onClick }: { speaker: Speaker; onClick: () => 
                     alt={speaker.name}
                     fill
                     className="object-cover"
+                    style={{ objectPosition: speaker.objectPosition || 'center' }}
                 />
             </motion.div>
 

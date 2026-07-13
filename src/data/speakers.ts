@@ -10,7 +10,7 @@ import georgiosImg from "@/images/gde/georgios.jpeg";
 import imranImg from "@/images/gde/imran.jpeg";
 import kartikeyImg from "@/images/gde/kartikey.jpeg";
 import karthikImg from "@/images/gde/karthik.jpeg";
-import kshitizImg from "@/images/gde/kshitiz.jpeg";
+import kshitizImg from "@/images/gde/kshitiz.png";
 import mashhoodImg from "@/images/gde/mashhood.jpeg";
 import ahsanImg from "@/images/gde/ahsan.png";
 import nitinImg from "@/images/gde/nitin.jpeg";
@@ -21,13 +21,17 @@ import suesiImg from "@/images/gde/suesi.jpeg";
 import tomekImg from "@/images/gde/tomek.png";
 import ritwikImg from "@/images/gde/ritwik.jpeg";
 import abdurImg from "@/images/gde/abdur.jpeg";
+import robinaImg from "@/images/gde/robina.jpg";
+import pooImg from "@/images/gde/poo.jpeg";
+import leongImg from "@/images/gde/leong.png";
+import xihanImg from "@/images/gde/xihan.jpg";
 
 // Industry Expert Images
 import abdulImg from "@/images/industryexperts/abdul.png";
 import ahmedImg from "@/images/industryexperts/ahmed.jpeg";
 import ahmadAnisImg from "@/images/industryexperts/Ahmad.jpeg";
-import ammarImg from "@/images/industryexperts/Ammar.jpeg";
-import anmolImg from "@/images/industryexperts/Anmol.png";
+import ammarImg from "@/images/industryexperts/ammar.webp";
+import anmolImg from "@/images/industryexperts/anmol.jpeg";
 import ehtishamImg from "@/images/industryexperts/Ehtisham.jpeg";
 import hashimImg from "@/images/industryexperts/hashim.jpeg";
 import huzaifaImg from "@/images/industryexperts/huzaifa.png";
@@ -37,6 +41,7 @@ import mugheesImg from "@/images/industryexperts/mughees.jpeg";
 import samiImg from "@/images/industryexperts/sami.png";
 import syedaImg from "@/images/industryexperts/syeda.jpeg";
 import uroojImg from "@/images/industryexperts/urooj.png";
+import abdulRahmanAzamImg from "@/images/industryexperts/abdulrahmanazam.png";
 
 export const gdes: Speaker[] = [
     {
@@ -182,6 +187,38 @@ export const gdes: Speaker[] = [
         image: tomekImg.src,
         isGDE: true,
         socials: { linkedin: "https://www.linkedin.com/in/tomaszporozynski/" }
+    },
+    {
+        id: "robina-mirbahar",
+        name: "Robina Mirbahar",
+        role: "GDE in Google Cloud",
+        image: robinaImg.src,
+        isGDE: true,
+        socials: { linkedin: "https://www.linkedin.com/in/robinamirbahar/" }
+    },
+    {
+        id: "poo-kuan-hoong",
+        name: "Poo Kuan Hoong",
+        role: "GDE in AI",
+        image: pooImg.src,
+        isGDE: true,
+        socials: { linkedin: "https://www.linkedin.com/in/kuanhoong/" }
+    },
+    {
+        id: "leong-lai-fong",
+        name: "Leong Lai Fong",
+        role: "GDE in Google Cloud & AI",
+        image: leongImg.src,
+        isGDE: true,
+        socials: { linkedin: "https://www.linkedin.com/in/leong-lai-fong/" }
+    },
+    {
+        id: "xihan-li",
+        name: "Xihan Li",
+        role: "GDE in Google Cloud & AI",
+        image: xihanImg.src,
+        isGDE: true,
+        socials: { linkedin: "https://www.linkedin.com/in/xihanli/" }
     }
 ];
 
@@ -245,6 +282,7 @@ export const industryExperts: Speaker[] = [
         role: "AI Engineer",
         company: "Atomic Computing",
         image: anmolImg.src,
+        objectPosition: "center 15%",
         socials: { linkedin: "https://www.linkedin.com/in/anmolzehrah/" }
     },
     {
@@ -318,6 +356,14 @@ export const industryExperts: Speaker[] = [
         company: "Iqra University",
         image: uroojImg.src,
         socials: { linkedin: "https://www.linkedin.com/in/urooj-fatima-963394232/" }
+    },
+    {
+        id: "abdul-rahman-azam",
+        name: "Abdul Rahman Azam",
+        role: "Founder",
+        company: "AISeason",
+        image: abdulRahmanAzamImg.src,
+        socials: { linkedin: "https://www.linkedin.com/in/abdulrahmanazam/" }
     },
 ];
 

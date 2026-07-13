@@ -220,7 +220,7 @@ export const sessions: VideoSession[] = [
         programId: "study-jams",
         date: "2025-08-31",
         duration: "55:00",
-        views: 88,
+        views: 92,
         tags: ["ADK", "Vertex AI", "Agents"]
     },
     {
@@ -233,7 +233,7 @@ export const sessions: VideoSession[] = [
         programId: "study-jams",
         date: "2025-12-21",
         duration: "1:05:00",
-        views: 116,
+        views: 126,
         tags: ["ADK", "AntiGravity", "Real-Time"]
     },
     {
@@ -246,8 +246,21 @@ export const sessions: VideoSession[] = [
         programId: "study-jams",
         date: "2026-03-15",
         duration: "1:11:04",
-        views: 29,
+        views: 46,
         tags: ["Attention Mechanisms", "AI Systems", "LLM"]
+    },
+    {
+        id: "v-ml-20",
+        title: "Building RAG Applications from Scratch | AI Study Jams Day 6 ft. Abdul Rahman Azam Founder AISeason",
+        description: "Step-by-step guide to building Retrieval-Augmented Generation (RAG) applications from the ground up.",
+        youtubeId: "NMt41GwaHZw",
+        youtubeUrl: "https://youtu.be/NMt41GwaHZw",
+        speakerId: "abdul-rahman-azam",
+        programId: "study-jams",
+        date: "2026-06-21",
+        duration: "1:19:13",
+        views: 286,
+        tags: ["RAG", "Vector Databases", "LLM"]
     },
     // New AI/ML Paper Reading and Writing Clubs Sessions
     {
@@ -312,7 +325,7 @@ export const sessions: VideoSession[] = [
         programId: "paper-reading",
         date: "2025-11-29",
         duration: "1:10:00",
-        views: 121,
+        views: 139,
         tags: ["MapReduce", "Big Data", "Distributed Systems"]
     },
     {
@@ -325,7 +338,7 @@ export const sessions: VideoSession[] = [
         programId: "paper-reading",
         date: "2025-12-12",
         duration: "1:05:00",
-        views: 151,
+        views: 161,
         tags: ["GAN", "Self-Attention", "Generative AI"]
     },
     {
@@ -338,7 +351,7 @@ export const sessions: VideoSession[] = [
         programId: "paper-reading",
         date: "2026-01-03",
         duration: "1:25:00",
-        views: 197,
+        views: 218,
         tags: ["CLIP", "Computer Vision", "Multimodal"]
     },
     {
@@ -351,7 +364,7 @@ export const sessions: VideoSession[] = [
         programId: "paper-reading",
         date: "2026-02-27",
         duration: "1:06:22",
-        views: 36,
+        views: 54,
         tags: ["AGI", "Safety", "AI"]
     },
     {
@@ -364,8 +377,21 @@ export const sessions: VideoSession[] = [
         programId: "paper-reading",
         date: "2026-03-01",
         duration: "22:08",
-        views: 36,
+        views: 42,
         tags: ["GenAI", "GenXAI", "Explainable AI"]
+    },
+    {
+        id: "v-pr-10",
+        title: "Attention Is All You Need | AI Paper Reading Clubs Day 7 ft. Leong Lai Fong (GDE Google Cloud & AI)",
+        description: "Day 7 of the AI Paper Reading Clubs, focusing on the seminal 'Attention Is All You Need' paper.",
+        youtubeId: "iBUGHk4jq2Y",
+        youtubeUrl: "https://youtu.be/iBUGHk4jq2Y",
+        speakerId: "leong-lai-fong",
+        programId: "paper-reading",
+        date: "2026-05-09",
+        duration: "1:00:11",
+        views: 1877,
+        tags: ["Transformers", "Attention", "Deep Learning"]
     },
     // New AI/ML Math Clubs Sessions
     {
@@ -404,8 +430,34 @@ export const sessions: VideoSession[] = [
         programId: "math-club",
         date: "2025-06-21",
         duration: "27:24",
-        views: 185,
+        views: 192,
         tags: ["Self-Attention", "Transformers", "Math"]
+    },
+    {
+        id: "v-math-4",
+        title: "The Mathematics of Vector Embeddings: How AI Represents and Understands Meaning | AI Math Clubs S2 ft. Anmol Zehrah",
+        description: "Explore the mathematical foundations of vector embeddings and how AI represents meaning.",
+        youtubeId: "MYK81-6L8Fg",
+        youtubeUrl: "https://youtu.be/MYK81-6L8Fg",
+        speakerId: "anmol-zehrah",
+        programId: "math-club",
+        date: "2026-07-05",
+        duration: "1:12:26",
+        views: 89,
+        tags: ["Vector Embeddings", "Manifold Hypothesis", "Math"]
+    },
+    {
+        id: "v-math-5",
+        title: "Mathematics Behind Transformers: From Word Embeddings to Attention Mechanisms | AIMC S-3 ft Xihan Li",
+        description: "Dive into the mathematical formulations behind Transformers, from embeddings to multi-head attention.",
+        youtubeId: "1sYpKoCobiE",
+        youtubeUrl: "https://youtu.be/1sYpKoCobiE",
+        speakerId: "xihan-li",
+        programId: "math-club",
+        date: "2026-07-11",
+        duration: "1:04:40",
+        views: 52,
+        tags: ["Transformers", "Self-Attention", "Math"]
     },
     // New Build with AI Sessions
     {
@@ -483,7 +535,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2025-07-20",
         duration: "50:00",
-        views: 144,
+        views: 146,
         tags: ["ADK", "Intelligent Systems", "Agents"]
     },
     {
@@ -496,7 +548,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2025-07-27",
         duration: "30:01",
-        views: 129,
+        views: 133,
         tags: ["Google AI Studio", "Production", "Prompts"]
     },
     {
@@ -509,7 +561,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-02-21",
         duration: "2:57:25",
-        views: 185,
+        views: 213,
         tags: ["Gemini 3", "ADK", "Agents"]
     },
     {
@@ -522,7 +574,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-02-22",
         duration: "1:01:00",
-        views: 86,
+        views: 93,
         tags: ["Gemini", "CLI", "Skills"]
     },
     {
@@ -535,7 +587,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-02-28",
         duration: "47:44",
-        views: 65,
+        views: 97,
         tags: ["Android Studio", "VSCode", "Offline AI"]
     },
     {
@@ -548,7 +600,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-03-06",
         duration: "51:43",
-        views: 69,
+        views: 73,
         tags: ["Google AI Studio", "Prompting"]
     },
     {
@@ -561,7 +613,7 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-03-07",
         duration: "44:06",
-        views: 69,
+        views: 75,
         tags: ["Gemma 3", "Multimodal", "Agents"]
     },
     {
@@ -574,8 +626,47 @@ export const sessions: VideoSession[] = [
         programId: "build-with-ai",
         date: "2026-03-14",
         duration: "1:36:06",
-        views: 46,
+        views: 59,
         tags: ["Google Cloud", "Okta", "Security"]
+    },
+    {
+        id: "v-bwa-14",
+        title: "Building a Multi-Agent System with Gemini | Build with AI Session 15 ft. Robina Mirbahar GDE Cloud",
+        description: "Explore how to build multi-agent systems using Google's Gemini models and agentic workflows.",
+        youtubeId: "exTjyjfsfhA",
+        youtubeUrl: "https://youtu.be/exTjyjfsfhA",
+        speakerId: "robina-mirbahar",
+        programId: "build-with-ai",
+        date: "2026-04-10",
+        duration: "1:57:12",
+        views: 175,
+        tags: ["Gemini", "Multi-Agent", "AI Agents"]
+    },
+    {
+        id: "v-bwa-15",
+        title: "Beyond Chatbots The Future of Generative AI and Agentic Systems | BwAI S-16 ft. Kshitiz Rimal GDE",
+        description: "A deep dive into agentic systems and the evolution of generative AI beyond standard chatbots.",
+        youtubeId: "LBej88B4bAw",
+        youtubeUrl: "https://youtu.be/LBej88B4bAw",
+        speakerId: "kshitiz-rimal",
+        programId: "build-with-ai",
+        date: "2026-04-17",
+        duration: "45:23",
+        views: 41,
+        tags: ["GenAI", "Agentic Systems", "AI Agents"]
+    },
+    {
+        id: "v-bwa-16",
+        title: "Getting Started with Google MCP Servers | Build with AI Session 17 ft Poo Kuan Hoong GDE AI",
+        description: "Learn how to get started with Google Model Context Protocol (MCP) servers and integrate them into your workflows.",
+        youtubeId: "LsuJZkUugGE",
+        youtubeUrl: "https://youtu.be/LsuJZkUugGE",
+        speakerId: "poo-kuan-hoong",
+        programId: "build-with-ai",
+        date: "2026-04-22",
+        duration: "1:00:14",
+        views: 75,
+        tags: ["MCP", "Servers", "Google AI"]
     },
     // New Community Talks & Special Sessions
     {
@@ -679,7 +770,7 @@ export const sessions: VideoSession[] = [
         programId: "community-talks",
         date: "2025-08-02",
         duration: "25:59",
-        views: 129,
+        views: 130,
         tags: ["Angular", "Performance", "Web"]
     },
 ];

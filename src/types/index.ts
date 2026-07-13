@@ -13,6 +13,7 @@ export interface Speaker {
   role: string;
   company?: string;
   image: string; // URL or path
+  objectPosition?: string; // CSS object-position values e.g. "center 20%"
   bio?: string;
   socials?: {
     twitter?: string;

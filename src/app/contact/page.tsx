@@ -53,6 +53,7 @@ const AvatarStack = () => {
                             src={speaker.image} 
                             alt={speaker.name}
                             className="w-full h-full object-cover scale-110"
+                            style={{ objectPosition: speaker.objectPosition || 'center' }}
                         />
                     </motion.div>
                 ))}

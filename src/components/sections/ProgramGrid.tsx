@@ -157,6 +157,7 @@ export function ProgramGrid() {
                                                     src={speaker.image} 
                                                     alt={speaker.name}
                                                     className="w-full h-full object-cover"
+                                                    style={{ objectPosition: speaker.objectPosition || 'center' }}
                                                 />
                                             </div>
                                         ))}
